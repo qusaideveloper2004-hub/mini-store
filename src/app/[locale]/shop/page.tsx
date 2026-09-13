@@ -26,7 +26,6 @@ export async function generateMetadata({
 }
 
 export default async function ShopPage({
-  params,
   searchParams,
 }: ShopPageProps) {
   const {q} = await searchParams;

@@ -13,6 +13,21 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import AccountDropdown from "@/components/auth/account-dropdown/AccountDropdown";
 import styles from "./Header.module.css";
 
+type DummyJsonSearchItem = {
+  id: number;
+  title: string;
+  price: number;
+  description: string;
+  category: string;
+  thumbnail: string;
+  discountPercentage: number;
+  rating: number;
+  reviews?: unknown[];
+  images?: string[];
+  stock: number;
+  availabilityStatus: string;
+};
+
 export default function Header() {
   const t = useTranslations("header");
   const router = useRouter();
@@ -35,16 +50,12 @@ export default function Header() {
   useEffect(() => {
     const trimmed = query.trim();
     if (!trimmed) {
-      setSearchResults([]);
-      setIsDropdownOpen(false);
-      setIsLoading(false);
       return;
     }
 
-    setIsLoading(true);
-    setIsDropdownOpen(true);
-
     const timer = setTimeout(async () => {
+      setIsLoading(true);
+      setIsDropdownOpen(true);
       try {
         const response = await fetch(
           `https://dummyjson.com/products/search?q=${encodeURIComponent(trimmed)}&limit=5`
@@ -52,7 +63,7 @@ export default function Header() {
         if (response.ok) {
           const data = await response.json();
           setSearchResults(
-            data.products.map((item: any) => ({
+            data.products.map((item: DummyJsonSearchItem) => ({
               id: item.id,
               title: item.title,
               price: item.price,
@@ -151,7 +162,15 @@ export default function Header() {
                     className={styles.searchInput}
                     type="search"
                     value={query}
-                    onChange={(e) => setQuery(e.target.value)}
+                    onChange={(e) => {
+                      const value = e.target.value;
+                      setQuery(value);
+                      if (!value.trim()) {
+                        setSearchResults([]);
+                        setIsDropdownOpen(false);
+                        setIsLoading(false);
+                      }
+                    }}
                     onFocus={() => query.trim() && setIsDropdownOpen(true)}
                     placeholder={t("searchPlaceholder")}
                     aria-label={t("searchPlaceholder")}
