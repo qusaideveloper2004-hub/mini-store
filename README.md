@@ -8,33 +8,24 @@ Includes full internationalization (i18n) support for **Arabic (RTL)** and **Eng
 
 ## 🔗 Live Demo
 
-[Open the live demo](https://YOUR-LIVE-DEMO-URL.vercel.app)
-
-> Replace `https://YOUR-LIVE-DEMO-URL.vercel.app` with your deployed project URL.
+👉 **[🌐 Open Live Demo App](https://mini-store-gilt.vercel.app/)**
 
 ---
 
-## 🖼️ Screenshots
+## 🖼️ Featured Highlights
 
-Add your screenshots to `docs/screenshots/` using these exact filenames:
+### Home & Product Banners
 
-### Home Page
+![Mini Store iPhone Showcase](public/images/home/hero-iphone2.jpg)
 
-![Mini Store home page](docs/screenshots/home-desktop.png.png)
+### Promotions & Features
 
-### Shop Page
+![Music Experience Speaker Showcase](public/images/home/music-experience2.jpg)
 
-![Mini Store shop page](docs/screenshots/shop-desktop.png.png)
+### New Arrivals & Gaming
 
-### Product Details
+![PlayStation & Accessories Showcase](public/images/home/hero-playstation2.jpg)
 
-![Mini Store product details page](docs/screenshots/product-details-desktop.png)
-
-### Account Page
-
-![Mini Store account page](docs/screenshots/account-desktop.png.png)
-
-> You can replace the filenames above, but the image paths in this section must match the files you add.
 
 ---
 
