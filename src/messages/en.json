@@ -297,6 +297,9 @@
     "about": "About",
     "signUp": "Sign Up",
     "searchPlaceholder": "What are you looking for?",
+    "searchNoResults": "No products found",
+    "searching": "Searching...",
+    "viewAllResults": "View all results",
     "wishlist": "Wishlist",
     "cart": "Cart",
     "login": "Log In",
@@ -307,6 +310,8 @@
     "subscribe": "Subscribe",
     "subscriptionDescription": "Get updates on new products and offers.",
     "emailPlaceholder": "Enter your email",
+    "subscribeSuccess": "Thank you for subscribing!",
+    "subscribeError": "Please enter a valid email address.",
     "support": "Support",
     "account": "Account",
     "quickLinks": "Quick Links",
@@ -473,7 +478,12 @@
   },
   "shopPage": {
     "title": "Shop",
-    "description": "Browse all available products."
+    "description": "Browse all available products.",
+    "searchResults": "Search results for \"{query}\"",
+    "resultsCount": "{count, plural, =0 {No products found} one {# product found} other {# products found}}",
+    "noResults": "No products found matching \"{query}\"",
+    "noResultsDescription": "Try checking your spelling or search for another term.",
+    "clearSearch": "Clear Search"
   },
   "productDetails": {
     "home": "Home",

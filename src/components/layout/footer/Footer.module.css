@@ -11,11 +11,11 @@
 .columns {
   display: grid;
   grid-template-columns:
-    minmax(10.5rem, 1.25fr)
-    minmax(9rem, 1fr)
-    minmax(8rem, 0.9fr)
-    minmax(8rem, 0.9fr)
-    minmax(12rem, 1.35fr);
+    minmax(11rem, 1.2fr)
+    minmax(13rem, 1.3fr)
+    minmax(8.5rem, 0.9fr)
+    minmax(8.5rem, 0.9fr)
+    minmax(12rem, 1.25fr);
   gap: var(--space-6);
   padding-bottom: var(--space-10);
 }
@@ -125,17 +125,32 @@
   font-size: var(--font-size-sm);
   font-style: normal;
   line-height: var(--line-height-relaxed);
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .footerLink {
   color: rgb(255 255 255 / 85%);
   font-size: var(--font-size-sm);
   line-height: var(--line-height-relaxed);
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  word-break: break-word;
 
   transition: color 160ms ease;
 }
+
+.subscribeSuccess {
+  margin: var(--space-2) 0 0;
+  font-size: var(--font-size-xs);
+  color: var(--color-success);
+}
+
+.subscribeError {
+  margin: var(--space-2) 0 0;
+  font-size: var(--font-size-xs);
+  color: var(--color-primary);
+}
+
 
 .footerLink:hover {
   color: var(--color-primary);

@@ -7,6 +7,7 @@ import {
 import {Link} from "@/i18n/routing";
 import {siteConfig} from "@/lib/site";
 
+import NewsletterForm from "./NewsletterForm";
 import styles from "./Footer.module.css";
 
 export default async function Footer() {
@@ -40,20 +41,7 @@ export default async function Footer() {
               {t("subscriptionDescription")}
             </p>
 
-            <div className={styles.emailField}>
-              <input
-                type="email"
-                placeholder={t("emailPlaceholder")}
-                aria-label={t("emailPlaceholder")}
-              />
-
-              <button
-                type="button"
-                aria-label={t("subscribe")}
-              >
-                <ArrowIcon />
-              </button>
-            </div>
+            <NewsletterForm />
           </section>
 
           <section>

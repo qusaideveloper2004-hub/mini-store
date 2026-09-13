@@ -1,10 +1,13 @@
 "use client";
 
+import {useState, useEffect, useRef} from "react";
+import Image from "next/image";
 import {useTranslations} from "next-intl";
 
-import {Link} from "@/i18n/routing";
+import {Link, useRouter} from "@/i18n/routing";
 import {useCartStore} from "@/store/cartStore";
 import {useWishlistStore} from "@/store/wishlistStore";
+import type {Product} from "@/types/product";
 
 import LanguageSwitcher from "./LanguageSwitcher";
 import AccountDropdown from "@/components/auth/account-dropdown/AccountDropdown";
@@ -12,6 +15,7 @@ import styles from "./Header.module.css";
 
 export default function Header() {
   const t = useTranslations("header");
+  const router = useRouter();
 
   const cartItems = useCartStore((state) => state.items);
   const wishlistItems = useWishlistStore((state) => state.items);
@@ -19,8 +23,86 @@ export default function Header() {
     (total, item) => total + item.quantity,
     0
   );
-
   const wishlistCount = wishlistItems.length;
+
+  const [query, setQuery] = useState("");
+  const [searchResults, setSearchResults] = useState<Product[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const searchContainerRef = useRef<HTMLDivElement>(null);
+
+  // Debounced search for instant dropdown preview
+  useEffect(() => {
+    const trimmed = query.trim();
+    if (!trimmed) {
+      setSearchResults([]);
+      setIsDropdownOpen(false);
+      setIsLoading(false);
+      return;
+    }
+
+    setIsLoading(true);
+    setIsDropdownOpen(true);
+
+    const timer = setTimeout(async () => {
+      try {
+        const response = await fetch(
+          `https://dummyjson.com/products/search?q=${encodeURIComponent(trimmed)}&limit=5`
+        );
+        if (response.ok) {
+          const data = await response.json();
+          setSearchResults(
+            data.products.map((item: any) => ({
+              id: item.id,
+              title: item.title,
+              price: item.price,
+              description: item.description,
+              category: item.category,
+              image: item.thumbnail,
+              discountPercentage: item.discountPercentage,
+              rating: item.rating,
+              reviews: item.reviews || [],
+              images: item.images || [],
+              stock: item.stock,
+              availabilityStatus: item.availabilityStatus,
+            }))
+          );
+        }
+      } catch {
+        setSearchResults([]);
+      } finally {
+        setIsLoading(false);
+      }
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, [query]);
+
+  // Close dropdown on click outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        searchContainerRef.current &&
+        !searchContainerRef.current.contains(event.target as Node)
+      ) {
+        setIsDropdownOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const trimmed = query.trim();
+    if (trimmed) {
+      setIsDropdownOpen(false);
+      router.push(`/shop?q=${encodeURIComponent(trimmed)}`);
+    } else {
+      router.push(`/shop`);
+    }
+  };
 
   return (
     <header className={styles.header}>
@@ -28,10 +110,7 @@ export default function Header() {
         <div className={`container ${styles.announcementInner}`}>
           <p className={styles.announcementText}>
             {t("announcement")}{" "}
-            <Link
-              href="/"
-              className={styles.announcementLink}
-            >
+            <Link href="/" className={styles.announcementLink}>
               {t("shopNow")}
             </Link>
           </p>
@@ -42,14 +121,8 @@ export default function Header() {
 
       <div className={styles.main}>
         <div className={`container ${styles.mainInner}`}>
-          <nav
-            className={styles.navigation}
-            aria-label="Main navigation"
-          >
-            <Link
-              href="/"
-              className={styles.brand}
-            >
+          <nav className={styles.navigation} aria-label="Main navigation">
+            <Link href="/" className={styles.brand}>
               {t("brand")}
             </Link>
 
@@ -72,15 +145,74 @@ export default function Header() {
             </div>
 
             <div className={styles.actions}>
-              <div className={styles.searchField}>
-                <input
-                  className={styles.searchInput}
-                  type="search"
-                  placeholder={t("searchPlaceholder")}
-                  aria-label={t("searchPlaceholder")}
-                />
+              <div className={styles.searchField} ref={searchContainerRef}>
+                <form onSubmit={handleSearchSubmit}>
+                  <input
+                    className={styles.searchInput}
+                    type="search"
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                    onFocus={() => query.trim() && setIsDropdownOpen(true)}
+                    placeholder={t("searchPlaceholder")}
+                    aria-label={t("searchPlaceholder")}
+                  />
 
-                <SearchIcon className={styles.searchIcon} />
+                  <button
+                    type="submit"
+                    className={styles.searchButton}
+                    aria-label="Submit search"
+                  >
+                    <SearchIcon className={styles.icon} />
+                  </button>
+                </form>
+
+                {isDropdownOpen && (
+                  <div className={styles.searchDropdown}>
+                    {isLoading ? (
+                      <div className={styles.searchStatus}>
+                        {t("searching")}
+                      </div>
+                    ) : searchResults.length > 0 ? (
+                      <>
+                        {searchResults.map((product) => (
+                          <Link
+                            key={product.id}
+                            href={`/product/${product.id}`}
+                            className={styles.searchItem}
+                            onClick={() => setIsDropdownOpen(false)}
+                          >
+                            <Image
+                              src={product.image}
+                              alt={product.title}
+                              width={44}
+                              height={44}
+                              className={styles.searchItemImage}
+                            />
+                            <div className={styles.searchItemInfo}>
+                              <p className={styles.searchItemTitle}>
+                                {product.title}
+                              </p>
+                              <span className={styles.searchItemPrice}>
+                                ${product.price}
+                              </span>
+                            </div>
+                          </Link>
+                        ))}
+                        <Link
+                          href={`/shop?q=${encodeURIComponent(query.trim())}`}
+                          className={styles.searchViewAll}
+                          onClick={() => setIsDropdownOpen(false)}
+                        >
+                          {t("viewAllResults")}
+                        </Link>
+                      </>
+                    ) : (
+                      <div className={styles.searchStatus}>
+                        {t("searchNoResults")}
+                      </div>
+                    )}
+                  </div>
+                )}
               </div>
 
               <Link
@@ -90,13 +222,9 @@ export default function Header() {
               >
                 <HeartIcon className={styles.icon} />
 
-                <span className={styles.count}>
-                  {wishlistCount}
-                </span>
+                <span className={styles.count}>{wishlistCount}</span>
 
-                <span className={styles.srOnly}>
-                  {t("wishlist")}
-                </span>
+                <span className={styles.srOnly}>{t("wishlist")}</span>
               </Link>
 
               <Link
@@ -106,13 +234,9 @@ export default function Header() {
               >
                 <CartIcon className={styles.icon} />
 
-                <span className={styles.count}>
-                  {cartCount}
-                </span>
+                <span className={styles.count}>{cartCount}</span>
 
-                <span className={styles.srOnly}>
-                  {t("cart")}
-                </span>
+                <span className={styles.srOnly}>{t("cart")}</span>
               </Link>
 
               <div className={styles.accountDropdown}>
@@ -138,14 +262,7 @@ function SearchIcon({className}: IconProps) {
       fill="none"
       aria-hidden="true"
     >
-      <circle
-        cx="11"
-        cy="11"
-        r="6"
-        stroke="currentColor"
-        strokeWidth="1.8"
-      />
-
+      <circle cx="11" cy="11" r="6" stroke="currentColor" strokeWidth="1.8" />
       <path
         d="m16 16 4 4"
         stroke="currentColor"

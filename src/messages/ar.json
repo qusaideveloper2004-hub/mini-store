@@ -296,6 +296,9 @@
     "about": "من نحن",
     "signUp": "إنشاء حساب",
     "searchPlaceholder": "ماذا تبحث عنه؟",
+    "searchNoResults": "لم يتم العثور على نتائج",
+    "searching": "جاري البحث...",
+    "viewAllResults": "عرض جميع النتائج",
     "wishlist": "المفضلة",
     "cart": "السلة",
     "login": "تسجيل الدخول",
@@ -306,6 +309,8 @@
     "subscribe": "اشترك",
     "subscriptionDescription": "احصل على آخر المنتجات والعروض.",
     "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "subscribeSuccess": "شكراً لاشتراكك! ستصلك أحدث العروض.",
+    "subscribeError": "يرجى إدخال بريد إلكتروني صحيح.",
     "support": "الدعم",
     "account": "الحساب",
     "quickLinks": "روابط سريعة",
@@ -469,7 +474,12 @@
   },
   "shopPage": {
     "title": "المتجر",
-    "description": "تصفح جميع المنتجات المتاحة."
+    "description": "تصفح جميع المنتجات المتاحة.",
+    "searchResults": "نتائج البحث عن \"{query}\"",
+    "resultsCount": "{count, plural, =0 {لم يتم العثور على منتجات} one {منتج واحد} two {منتجان} few {# منتجات} many {# منتجاً} other {# منتج}}",
+    "noResults": "لم نتمكن من العثور على أي منتج يطابق \"{query}\"",
+    "noResultsDescription": "تأكد من كتابة الكلمات بشكل صحيح أو جرب البحث عن كلمة أخرى.",
+    "clearSearch": "إلغاء البحث"
   },
   "productDetails": {
     "home": "الرئيسية",

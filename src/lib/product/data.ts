@@ -122,3 +122,25 @@ export const getProductsByCategory = cache(
     return data.products.map(mapProduct);
   }
 );
+
+export const searchProducts = cache(
+  async (query: string): Promise<Product[]> => {
+    const trimmed = query.trim();
+    if (!trimmed) {
+      return getProducts();
+    }
+
+    const response = await fetch(
+      `${API_URL}/products/search?q=${encodeURIComponent(trimmed)}`
+    );
+
+    if (!response.ok) {
+      throw new Error("Failed to search products");
+    }
+
+    const data: DummyJsonProductsResponse =
+      await response.json();
+
+    return data.products.map(mapProduct);
+  }
+);
