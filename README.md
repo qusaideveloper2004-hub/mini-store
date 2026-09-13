@@ -12,19 +12,24 @@ Includes full internationalization (i18n) support for **Arabic (RTL)** and **Eng
 
 ---
 
-## 🖼️ Featured Highlights
+## 🖼️ Screenshots
 
-### Home & Product Banners
+### Home Page
 
-![Mini Store iPhone Showcase](public/images/home/hero-iphone2.jpg)
+![Mini Store Home Page](docs/screenshots/home-desktop.png.png)
 
-### Promotions & Features
+### Shop Page
 
-![Music Experience Speaker Showcase](public/images/home/music-experience2.jpg)
+![Mini Store Shop Page](docs/screenshots/shop-desktop.png.png)
 
-### New Arrivals & Gaming
+### Product Details
 
-![PlayStation & Accessories Showcase](public/images/home/hero-playstation2.jpg)
+![Mini Store Product Details](docs/screenshots/product-details-desktop.png)
+
+### Account Page
+
+![Mini Store Account Page](docs/screenshots/account-desktop.png.png)
+
 
 
 ---
