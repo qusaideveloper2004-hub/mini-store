@@ -1,4 +1,4 @@
-# 🛒 Exclusive - E-Commerce Web Application (Mini Store)
+# Exclusive - E-Commerce Web Application (Mini Store)
 
 A modern, high-performance, full-featured E-Commerce web application built with **Next.js 16 (App Router)**, **React 19**, **TypeScript**, and **Tailwind CSS v4**.
 
@@ -6,13 +6,13 @@ Includes full internationalization (i18n) support for **Arabic (RTL)** and **Eng
 
 ---
 
-## 🔗 Live Demo
+## Live Demo
 
-👉 **[🌐 Open Live Demo App](https://mini-store-gilt.vercel.app/)**
+**[Open Live Demo App](https://mini-store-gilt.vercel.app/)**
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 
 ### Home Page
 
@@ -30,18 +30,16 @@ Includes full internationalization (i18n) support for **Arabic (RTL)** and **Eng
 
 ![Mini Store Account Page](docs/screenshots/account-desktop.png.png)
 
-
-
 ---
 
-## 🌟 Key Features
+## Key Features
 
-### 🌐 Internationalization (i18n) & RTL Support
+### Internationalization (i18n) & RTL Support
 
 - **Multi-language Support:** Seamless switching between **Arabic (`ar`)** and **English (`en`)**.
 - **Native RTL/LTR Layouts:** Automatic layout direction adjustment based on the active locale.
 
-### 🛍️ Shopping & Catalog
+### Shopping & Catalog
 
 - **Home Page Sections:**
   - Dynamic Hero Slider / Banners
@@ -53,12 +51,12 @@ Includes full internationalization (i18n) support for **Arabic (RTL)** and **Eng
 - **Product Details Page:** Multi-image selection, color/size options, rating & reviews, quantity selectors, and related products.
 - **Category & Shop Filter:** Filter products by categories, price ranges, and tags.
 
-### 🛒 Shopping Cart & Wishlist
+### Shopping Cart & Wishlist
 
 - **Cart Management:** Add, remove, update quantities, coupon code support, subtotal, shipping, and total calculation.
 - **Wishlist:** Save favorite items, quick move items from wishlist to cart.
 
-### 💳 Checkout & User Account
+### Checkout & User Account
 
 - **Checkout Process:** Billing information form with **Zod** validation, order summary, cash on delivery / online payment selection.
 - **User Profile & Account Dashboard:**
@@ -68,13 +66,13 @@ Includes full internationalization (i18n) support for **Arabic (RTL)** and **Eng
   - Order History & Tracking
   - Returns & Cancellations Center
 
-### 🔐 Authentication
+### Authentication
 
 - **User Authentication:** Login, Registration (Sign Up), and Password Reset (Forgot Password) pages powered by **React Hook Form** & **Zod**.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework:** [Next.js 16 (App Router)](https://nextjs.org/)
 - **UI Library:** [React 19](https://react.dev/)
@@ -88,7 +86,7 @@ Includes full internationalization (i18n) support for **Arabic (RTL)** and **Eng
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 mini-store/
@@ -121,7 +119,7 @@ mini-store/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -170,7 +168,7 @@ NEXT_PUBLIC_SITE_URL=https://your-domain.com
 
 ---
 
-## 📜 Available Scripts
+## Available Scripts
 
 - `npm run dev` — Starts the Next.js development server.
 - `npm run build` — Builds the application for production.
@@ -186,7 +184,7 @@ npm run build
 
 ---
 
-## 🌐 Localization Guide
+## Localization Guide
 
 Translations are located in `src/messages/`:
 
@@ -202,7 +200,7 @@ Localized pages use the `/en` and `/ar` prefixes, for example:
 
 ---
 
-## 💾 Data and Persistence
+## Data and Persistence
 
 Product data is loaded from [DummyJSON](https://dummyjson.com/). Cart, wishlist, authentication, account data, orders, returns, and cancellations are persisted in the browser using `localStorage` through Zustand persistence.
 
@@ -210,7 +208,7 @@ This project is currently a frontend demo. A production application would need a
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 The application can be deployed to Vercel or another platform that supports Next.js:
 
@@ -218,10 +216,9 @@ The application can be deployed to Vercel or another platform that supports Next
 2. Use `npm install` as the install command.
 3. Use `npm run build` as the build command.
 4. Add `NEXT_PUBLIC_SITE_URL` with the production URL.
-5. Replace the Live Demo placeholder at the top of this README.
 
 ---
 
-## 📄 License
+## License
 
 This project is open-source and available under the [MIT License](LICENSE).
