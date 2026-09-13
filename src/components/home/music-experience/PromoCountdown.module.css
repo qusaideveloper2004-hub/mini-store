@@ -1,0 +1,43 @@
+.countdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 3.875rem;
+  height: 3.875rem;
+  border-radius: var(--radius-full);
+
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.value {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.1;
+}
+
+.label {
+  margin-top: 0.125rem;
+
+  font-size: 0.625rem;
+  line-height: 1;
+}
+
+@media (max-width: 560px) {
+  .countdown {
+    gap: var(--space-3);
+  }
+
+  .item {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}

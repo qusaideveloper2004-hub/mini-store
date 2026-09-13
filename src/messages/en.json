@@ -1,0 +1,544 @@
+{
+  "home": "Home",
+  "cart": {
+    "title": "Cart",
+    "home": "Home",
+    "product": "Product",
+    "price": "Price",
+    "quantity": "Quantity",
+    "subtotal": "Subtotal",
+    "remove": "Remove {title} from cart",
+    "decreaseQuantity": "Decrease quantity for {title}",
+    "increaseQuantity": "Increase quantity for {title}",
+    "returnToShop": "Return To Shop",
+    "updateCart": "Update Cart",
+    "couponPlaceholder": "Coupon Code",
+    "applyCoupon": "Apply Coupon",
+    "cartUpdated": "Cart updated",
+    "couponUnavailable": "Coupons are not available in this demo yet.",
+    "cartTotal": "Cart Total",
+    "shipping": "Shipping",
+    "free": "Free",
+    "total": "Total",
+    "proceedToCheckout": "Proceed to checkout",
+    "emptyTitle": "Your cart is empty",
+    "emptyDescription": "Add products you like, then return here to complete your order.",
+    "continueShopping": "Continue Shopping"
+  },
+  "wishlist": "Wishlist",
+  "addToCart": "Add to Cart",
+  "storeName": "Mini Store",
+  "language": "Language",
+
+  "checkout": {
+    "title": "Checkout",
+    "orderSummary": "Order Summary",
+    "billingDetails": "Billing Details",
+    "home": "Home",
+    "cart": "Cart",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "free": "Free",
+    "paymentMethod": "Payment Method",
+    "bank": "Bank",
+    "cash": "Cash on delivery",
+    "total": "Total",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "city": "City",
+    "placeOrder": "Place Order",
+    "emptyCart": "Your cart is empty",
+    "emptyCartDescription": "Add some products before checking out.",
+    "continueShopping": "Continue Shopping",
+    "orderSuccess": "Order placed successfully!",
+    "orderSuccessDescription": "Thank you for your purchase.",
+    "orderNumber": "Order number",
+    "backToHome": "Back to Home",
+    "viewOrders": "View My Orders"
+  },
+
+  "login": {
+    "title": "Log In",
+    "emailOrPhone": "Email or Phone Number",
+    "password": "Password",
+    "submit": "Log In",
+    "forgotPassword": "Forget Password?",
+    "noAccount": "Don't have an account?",
+    "createAccount": "Create Account",
+    "imageAlt": "Woman shopping with bags",
+    "subtitle": "Enter your details below",
+    "emailOrPhonePlaceholder": "Email or Phone Number",
+    "passwordPlaceholder": "Password"
+  },
+  "signup": {
+    "title": "Create Account",
+    "name": "Name",
+    "emailOrPhone": "Email or Phone Number",
+    "password": "Password",
+    "submit": "Create Account",
+    "alreadyHaveAccount": "Already have an account?",
+    "login": "Log In",
+    "subtitle": "Enter your details below",
+    "namePlaceholder": "Name",
+    "emailOrPhonePlaceholder": "Email or Phone Number",
+    "passwordPlaceholder": "Password",
+    "signUpWithGoogle": "Sign up with Google",
+    "imageAlt": "Woman shopping with bags"
+  },
+  "forgotPassword": {
+    "title": "Forgot Password",
+    "emailOrPhone": "Email or Phone Number",
+    "submit": "Reset Password",
+    "successTitle": "Request Submitted",
+    "successDescription": "If an account exists, password reset instructions have been sent.",
+    "subtitle": "Enter your email or phone number to reset your password",
+    "emailOrPhonePlaceholder": "Email or Phone Number",
+    "backToLogin": "Back to Log In",
+    "imageAlt": "Password reset illustration"
+  },
+  "account": {
+    "home": "Home",
+    "welcome": "Welcome!",
+    "manageAccount": "Manage My Account",
+    "myProfile": "My Profile",
+    "addressBook": "Address Book",
+    "paymentOptions": "My Payment Options",
+    "myOrders": "My Orders",
+    "orders": "My Orders",
+    "returns": "My Returns",
+    "cancellations": "My Cancellations",
+    "wishlist": "My Wishlist",
+    "noOrders": "No orders yet",
+    "orderNumber": "Order",
+    "orderDate": "Order date",
+    "orderStatus": "Status",
+    "quantity": "Quantity",
+    "total": "Total",
+    "editProfile": "Edit Profile",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "address": "Address",
+    "addAddress": "Add New Address",
+    "phone": "Phone Number",
+    "street": "Street Address",
+    "city": "City",
+    "country": "Country",
+    "postalCode": "Postal Code",
+    "saveAddress": "Save Address",
+    "savedAddresses": "Saved Addresses",
+    "noAddresses": "No addresses saved yet",
+    "defaultAddress": "Default Address",
+    "makeDefault": "Make Default",
+    "delete": "Delete",
+    "addPayment": "Add New Payment Method",
+    "cardholderName": "Cardholder Name",
+    "cardNumber": "Card Number",
+    "expiryMonth": "Expiry Month",
+    "expiryYear": "Expiry Year",
+    "cvv": "CVV",
+    "savePayment": "Save Payment",
+    "savedPaymentMethods": "Saved Payment Methods",
+    "noPaymentMethods": "No payment methods saved yet",
+    "defaultPayment": "Default Payment",
+    "makeDefaultPayment": "Make Default",
+    "deletePayment": "Delete",
+    "requestReturn": "Request Return",
+    "returnProduct": "Product",
+    "selectProduct": "Select a product",
+    "returnQuantity": "Quantity",
+    "returnReason": "Return Reason",
+    "selectReason": "Select a reason",
+    "wrongSize": "Wrong Size",
+    "wrongProduct": "Wrong Product",
+    "damagedProduct": "Damaged Product",
+    "notNeeded": "No Longer Needed",
+    "submitReturn": "Submit Return",
+    "noReturns": "No returns yet",
+    "cancelOrder": "Cancel Order",
+    "cancellationReason": "Cancellation Reason",
+    "selectCancellationReason": "Select a reason",
+    "changedMyMind": "Changed My Mind",
+    "orderedByMistake": "Ordered By Mistake",
+    "foundBetterPrice": "Found a Better Price",
+    "deliveryTooLate": "Delivery Is Too Late",
+    "submitCancellation": "Submit Cancellation",
+    "cancellationNumber": "Cancellation",
+    "cancellationStatus": "Status",
+    "noCancellations": "No cancellations yet",
+    "account": "Account",
+    "login": "Login",
+    "signUp": "Sign Up",
+    "logout": "Logout",
+    "passwordChanges": "Password Changes",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "cancel": "Cancel",
+    "saveChanges": "Save Changes",
+    "changesSaved": "Changes saved successfully",
+    "addressAdded": "Address added successfully",
+    "paymentAdded": "Payment method added successfully",
+    "continueShopping": "Continue Shopping",
+    "orderStatuses": {
+      "pending": "Pending",
+      "processing": "Processing",
+      "shipped": "Shipped",
+      "delivered": "Delivered",
+      "cancelled": "Cancelled",
+      "returnNumber": "Return",
+      "requestDate": "Request date",
+      "returnStatusRequested": "Requested",
+      "returnStatusApproved": "Approved",
+      "returnStatusRejected": "Rejected",
+      "returnStatusCompleted": "Completed",
+      "returnSubmitted": "Return request submitted successfully",
+      "closeReturnForm": "Close return form"
+    }
+  },
+
+  "profile": {
+    "title": "My Profile",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "address": "Address",
+    "city": "City",
+    "country": "Country",
+    "postalCode": "Postal Code",
+    "saveChanges": "Save Changes"
+  },
+  "addressBook": {
+    "title": "Address Book",
+    "addNewAddress": "Add New Address",
+    "editAddress": "Edit Address",
+    "deleteAddress": "Delete Address",
+    "noAddresses": "No addresses saved yet",
+    "defaultAddress": "Default Address",
+    "makeDefault": "Make Default"
+  },
+
+  "addAddress": "Add New Address",
+  "phone": "Phone Number",
+  "street": "Street Address",
+  "city": "City",
+  "country": "Country",
+  "postalCode": "Postal Code",
+  "saveAddress": "Save Address",
+  "savedAddresses": "Saved Addresses",
+  "noAddresses": "No addresses saved yet",
+  "defaultAddress": "Default Address",
+  "makeDefault": "Make Default",
+  "delete": "Delete",
+  "edit": "Edit",
+  "about": {
+    "title": "About Us",
+    "subtitle": "We are dedicated to providing the best shopping experience.",
+    "storyTitle": "Our Story",
+    "story": "Our store was created to make online shopping simple, convenient, and enjoyable. We bring quality products together in one place and make it easy for customers to discover and purchase what they need.",
+    "missionTitle": "Our Mission",
+    "mission": "Our mission is to provide quality products, a smooth shopping experience, and excellent customer service.",
+    "visionTitle": "Our Vision",
+    "vision": "Our vision is to become a trusted destination for online shopping by putting our customers first.",
+    "stats": {
+      "customers": "Customers",
+      "products": "Products",
+      "orders": "Orders",
+      "support": "Customer Support"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We would love to hear from you. Get in touch with us.",
+
+    "breadcrumbLabel": "Contact page navigation",
+    "home": "Home",
+
+    "callUsTitle": "Call To Us",
+    "callUsDescription": "We are available 24/7, 7 days a week.",
+    "phone": "01032831805",
+
+    "writeUsTitle": "Write To Us",
+    "writeUsDescription": "Fill out our form and we will contact you within 24 hours.",
+    "contactEmail": "qusaideveloper2004@gmail.com",
+
+    "name": "Your Name",
+    "emailLabel": "Your Email",
+    "message": "Your Message",
+
+    "namePlaceholder": "Enter your name",
+    "emailPlaceholder": "Enter your email",
+    "messagePlaceholder": "Write your message here",
+
+    "sendMessage": "Send Message",
+    "successMessage": "Your message has been sent successfully."
+  },
+  "notFound": {
+    "title": "404 - Page Not Found",
+    "description": "The page you're looking for doesn't exist or may have been moved.",
+    "backToHome": "Back to Home"
+  },
+  "error": {
+    "title": "Something Went Wrong",
+    "description": "An unexpected error occurred. Please try again.",
+    "tryAgain": "Try Again"
+  },
+  "loading": {
+    "message": "Loading..."
+  },
+  "header": {
+    "announcement": "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!",
+    "shopNow": "Shop Now",
+    "home": "Home",
+    "contact": "Contact",
+    "about": "About",
+    "signUp": "Sign Up",
+    "searchPlaceholder": "What are you looking for?",
+    "wishlist": "Wishlist",
+    "cart": "Cart",
+    "login": "Log In",
+    "account": "My Account",
+    "brand": "Mini Store"
+  },
+  "footer": {
+    "subscribe": "Subscribe",
+    "subscriptionDescription": "Get updates on new products and offers.",
+    "emailPlaceholder": "Enter your email",
+    "support": "Support",
+    "account": "Account",
+    "quickLinks": "Quick Links",
+    "myAccount": "My Account",
+    "loginRegister": "Login / Register",
+    "cart": "Cart",
+    "wishlist": "Wishlist",
+    "about": "About",
+    "contact": "Contact",
+    "copyright": "© {year} Mini Store. All rights reserved.",
+    "shop": "Shop",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms Of Use",
+    "faq": "FAQ",
+    "downloadApp": "Download App",
+    "downloadDescription": "Scan the QR code to chat with us on Telegram.",
+    "telegramQrAlt": "Telegram QR code",
+    "googlePlay": "Google Play",
+    "appStore": "App Store"
+  },
+  "productCard": {
+    "discount": "-{discount}%",
+    "addToWishlist": "Add {title} to wishlist",
+    "addToCart": "Add to Cart",
+    "ratingLabel": "Rating: {rating} out of 5",
+    "reviews": "({count, plural, =0 {No reviews} one {# review} other {# reviews}})"
+  },
+  "homePage": {
+    "hero": {
+      "goToSlide": "Go to slide {number}",
+      "iphone": {
+        "eyebrow": "iPhone 14 Series",
+        "title": "Up to 10% off Voucher",
+        "imageAlt": "iPhone 14 promotional offer",
+        "previousProducts": "Show previous products",
+        "nextProducts": "Show next products",
+        "viewAllProducts": "View All Products"
+      },
+      "playstation": {
+        "eyebrow": "PlayStation 5",
+        "title": "Experience the next level of gaming",
+        "imageAlt": "PlayStation 5 promotional offer"
+      },
+      "womenCollection": {
+        "eyebrow": "Women's Collection",
+        "title": "Find your next favorite style",
+        "imageAlt": "Women's fashion promotional offer"
+      },
+      "speakers": {
+        "eyebrow": "Wireless Speakers",
+        "title": "Sound that moves with you",
+        "imageAlt": "Wireless speakers promotional offer"
+      }
+    },
+    "sidebar": {
+      "womenFashion": "Women's Fashion",
+      "womenDresses": "Dresses",
+      "womenBags": "Bags",
+      "womenShoes": "Shoes",
+      "menFashion": "Men's Fashion",
+      "menShirts": "Shirts",
+      "menShoes": "Shoes",
+      "menWatches": "Watches",
+      "electronics": "Electronics",
+      "homeLifestyle": "Home & Lifestyle",
+      "medicine": "Medicine",
+      "sportsOutdoor": "Sports & Outdoor",
+      "babyToys": "Baby's & Toys",
+      "groceriesPets": "Groceries & Pets",
+      "healthBeauty": "Health & Beauty",
+      "navigationLabel": "Product categories",
+      "openSubmenu": "Open {category} submenu"
+    },
+    "flashSales": {
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds",
+      "eyebrow": "Today's",
+      "title": "Flash Sales",
+      "previousProducts": "Show previous products",
+      "nextProducts": "Show next products",
+      "viewAllProducts": "View All Products"
+    },
+    "browseCategories": {
+      "eyebrow": "Categories",
+      "title": "Browse By Category",
+      "previousCategories": "Show previous categories",
+      "nextCategories": "Show next categories",
+      "items": {
+        "phones": "Phones",
+        "computers": "Computers",
+        "smartWatches": "SmartWatch",
+        "cameras": "Camera",
+        "headphones": "HeadPhones",
+        "gaming": "Gaming"
+      }
+    },
+    "bestSelling": {
+      "eyebrow": "This Month",
+      "title": "Best Selling Products",
+      "viewAll": "View All"
+    },
+    "musicExperience": {
+      "eyebrow": "Categories",
+      "title": "Enhance Your Music Experience",
+      "buyNow": "Buy Now",
+      "imageAlt": "Wireless speaker promotion",
+      "hours": "Hours",
+      "days": "Days",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
+    },
+    "exploreProducts": {
+      "eyebrow": "Our Products",
+      "title": "Explore Our Products",
+      "previousProducts": "Show previous products",
+      "nextProducts": "Show next products",
+      "viewAllProducts": "View All Products"
+    },
+    "newArrival": {
+      "eyebrow": "Featured",
+      "title": "New Arrival",
+      "shopNow": "Shop Now",
+      "items": {
+        "playstation": {
+          "title": "PlayStation 5",
+          "description": "Black and White version of the PS5 coming out on sale.",
+          "imageAlt": "PlayStation 5 console"
+        },
+        "womenCollection": {
+          "title": "Women's Collections",
+          "description": "Featured woman collections that give you another vibe.",
+          "imageAlt": "Women's fashion collection"
+        },
+        "speakers": {
+          "title": "Speakers",
+          "description": "Amazon wireless speakers",
+          "imageAlt": "Wireless speakers"
+        },
+        "perfume": {
+          "title": "Perfume",
+          "description": "GUCCI INTENSE OUD EDP",
+          "imageAlt": "Perfume bottle"
+        }
+      }
+    },
+    "serviceFeatures": {
+      "items": {
+        "delivery": {
+          "title": "FREE AND FAST DELIVERY",
+          "description": "Free delivery for all orders over $140"
+        },
+        "support": {
+          "title": "24/7 CUSTOMER SERVICE",
+          "description": "Friendly 24/7 customer support"
+        },
+        "guarantee": {
+          "title": "MONEY BACK GUARANTEE",
+          "description": "We return money within 30 days"
+        }
+      }
+    }
+  },
+  "shopPage": {
+    "title": "Shop",
+    "description": "Browse all available products."
+  },
+  "productDetails": {
+    "home": "Home",
+    "reviews": "({count, plural, =0 {No reviews} one {# review} other {# reviews}})",
+    "inStock": "In Stock",
+    "outOfStock": "Out of Stock",
+    "quantity": "Quantity",
+    "decreaseQuantity": "Decrease quantity",
+    "increaseQuantity": "Increase quantity",
+    "addToCart": "Add To Cart",
+    "buyNow": "Buy Now",
+    "freeDelivery": "Free Delivery",
+    "freeDeliveryDescription": "Delivery options are confirmed at checkout.",
+    "returnDelivery": "Return Delivery",
+    "returnDeliveryDescription": "Return options are confirmed at checkout.",
+    "addToWishlist": "Add {title} to wishlist",
+    "removeFromWishlist": "Remove {title} from wishlist",
+    "viewImage": "View product image {number}",
+    "relatedItems": "Related Items"
+  },
+  "wishlistPage": {
+    "breadcrumbLabel": "Wishlist navigation",
+    "home": "Home",
+    "title": "Wishlist",
+    "savedItems": "{count, plural, =0 {No saved items} one {# saved item} other {# saved items}}",
+    "productListLabel": "Saved products",
+    "emptyTitle": "Your wishlist is empty",
+    "emptyDescription": "Save products you like here so you can find them easily later.",
+    "continueShopping": "Continue Shopping"
+  },
+  "aboutPage": {
+    "breadcrumbLabel": "About page navigation",
+    "home": "Home",
+    "title": "About",
+
+    "heroTitle": "Our Story",
+    "heroParagraphOne": "Mini Store was created to make online shopping simple, enjoyable and accessible for everyone. We bring carefully selected products together in one place.",
+    "heroParagraphTwo": "Our goal is to provide a smooth shopping experience through clear product information, simple navigation and helpful customer support.",
+    "heroImageAlt": "People shopping together",
+
+    "statsLabel": "Store statistics",
+    "stats": {
+      "customers": "Active Customers",
+      "sales": "Monthly Product Sale",
+      "products": "Products Available",
+      "support": "Customer Support"
+    },
+
+    "teamEyebrow": "Our Team",
+    "teamTitle": "Meet Our Team",
+    "teamDescription": "The people behind Mini Store and its shopping experience.",
+
+    "team": {
+      "qusai": {
+        "name": "Qusai Essam",
+        "role": "Frontend Developer"
+      },
+      "emmaWatson": {
+        "name": "Emma Watson",
+        "role": "Managing Director"
+      },
+      "willSmith": {
+        "name": "Essam Fikry",
+        "role": "Product Designer"
+      }
+    }
+  }
+}

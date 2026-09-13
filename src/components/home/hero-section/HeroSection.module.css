@@ -1,0 +1,21 @@
+.section {
+  padding-top: var(--space-8);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 11.75rem minmax(0, 1fr);
+  gap: var(--space-6);
+  align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-top: var(--space-6);
+  }
+
+  .inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+}

@@ -1,26 +1,167 @@
 @import "tailwindcss";
 
+/* =========================================
+   1) Design Tokens
+   هذه هي القيم المشتركة في الموقع كله
+   ========================================= */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ---------- Colors ---------- */
+
+  --color-primary: #db4444;
+  --color-primary-hover: #c93434;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --color-text: #000000;
+  --color-text-muted: #7f7f7f;
+
+  --color-page-background: #ffffff;
+  --color-surface: #f5f5f5;
+  --color-border: #e5e5e5;
+
+  --color-rating: #ffad33;
+  --color-success: #00ff66;
+
+  /* ---------- Typography ---------- */
+
+  /*
+    نستخدم fallback مؤقتًا.
+    لاحقًا سنضيف الخط الحقيقي من layout.tsx
+    باستخدام next/font.
+  */
+  --font-family-sans: Arial, Helvetica, sans-serif;
+
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-xl: 1.5rem; /* 24px */
+  --font-size-2xl: 2.25rem; /* 36px */
+  --font-size-3xl: 3rem; /* 48px */
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  /* ---------- Spacing ---------- */
+
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-7: 2rem; /* 32px */
+  --space-8: 2.5rem; /* 40px */
+  --space-9: 3rem; /* 48px */
+  --space-10: 5rem; /* 80px */
+  --space-11: 8.75rem; /* 140px */
+
+  /* ---------- Layout ---------- */
+
+  --container-width: 1170px;
+  --container-padding: 1rem;
+
+  --product-grid-gap: 1.875rem; /* 30px */
+  --section-gap: 5rem; /* 80px */
+
+  /* ---------- Shape ---------- */
+
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-full: 9999px;
+
+  /* ---------- Shadows ---------- */
+
+  --shadow-card: 0 1px 13px rgb(0 0 0 / 5%);
+  --shadow-dropdown: 0 8px 24px rgb(0 0 0 / 12%);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* =========================================
+   2) Global Reset
+   قواعد تجعل المتصفح يبدأ بشكل موحد
+   ========================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-width: 320px;
+  margin: 0;
+
+  background-color: var(--color-page-background);
+  color: var(--color-text);
+
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================================
+   3) Shared Layout Utility
+   نستخدمه داخل أي صفحة لتوسيط المحتوى
+   ========================================= */
+
+.container {
+  width: min(
+    calc(100% - (var(--container-padding) * 2)),
+    var(--container-width)
+  );
+
+  margin-inline: auto;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: var(--product-grid-gap);
+  padding-block: var(--space-8);
+}
+
+/* مساحة مريحة للشاشات الأكبر */
+@media (min-width: 768px) {
+  :root {
+    --container-padding: 2rem;
+  }
+}
+
+/* ضبط بسيط للنص العربي */
+[dir="rtl"] {
+  text-align: right;
 }

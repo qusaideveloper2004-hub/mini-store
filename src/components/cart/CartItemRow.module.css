@@ -1,0 +1,28 @@
+.row {
+  display: grid;
+  grid-template-columns: minmax(16rem, 2fr) minmax(5rem, 0.8fr) minmax(7rem, 0.9fr) minmax(5rem, 0.7fr);
+  align-items: center;
+  gap: var(--space-6);
+  padding: var(--space-5) var(--space-6);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-card);
+}
+
+.product { position: relative; display: flex; align-items: center; min-width: 0; gap: var(--space-4); }
+.imageSurface { display: grid; flex: 0 0 5rem; place-items: center; width: 5rem; height: 5rem; border-radius: var(--radius-sm); background: var(--color-surface); }
+.image { width: 4.25rem; height: 4.25rem; object-fit: contain; }
+.title, .price, .subtotal { margin: 0; font-size: var(--font-size-sm); }
+.title { overflow: hidden; font-weight: var(--font-weight-medium); text-overflow: ellipsis; white-space: nowrap; }
+.subtotal { font-weight: var(--font-weight-medium); }
+.quantity { justify-self: start; }
+.removeButton { position: absolute; inset-inline-start: -0.35rem; top: -0.35rem; display: grid; place-items: center; width: 1.3rem; height: 1.3rem; border: 0; border-radius: var(--radius-full); padding: 0; background: var(--color-primary); color: var(--color-white); }
+.removeButton svg { width: 0.8rem; height: 0.8rem; }
+
+@media (max-width: 700px) {
+  .row { grid-template-columns: 1fr auto; gap: var(--space-4); padding: var(--space-4); }
+  .product { grid-column: 1 / -1; }
+  .price::before, .subtotal::before { color: var(--color-text-muted); font-size: var(--font-size-xs); }
+  .quantity { justify-self: start; }
+  .subtotal { justify-self: end; }
+}

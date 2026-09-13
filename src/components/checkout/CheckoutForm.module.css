@@ -1,0 +1,12 @@
+.form { display: grid; gap: var(--space-5); }
+.form h1 { margin: 0 0 var(--space-2); font-size: var(--font-size-xl); font-weight: var(--font-weight-medium); }
+.field { display: grid; gap: var(--space-2); color: var(--color-text-muted); font-size: var(--font-size-sm); }
+.field input { width: 100%; min-height: 3.5rem; border: 0; border-radius: var(--radius-sm); padding-inline: var(--space-4); background: var(--color-surface); color: var(--color-text); }
+.field small { color: var(--color-primary); }
+.paymentMethods { display: grid; gap: var(--space-3); margin: var(--space-2) 0 0; border: 0; padding: 0; }
+.paymentMethods legend { margin-bottom: var(--space-3); font-weight: var(--font-weight-medium); }
+.paymentMethods label { display: flex; align-items: center; gap: var(--space-3); font-size: var(--font-size-sm); }
+.paymentMethods input { accent-color: var(--color-primary); }
+.submitButton { width: fit-content; min-width: 12rem; margin-top: var(--space-3); border: 0; border-radius: var(--radius-sm); padding: var(--space-4) var(--space-7); background: var(--color-primary); color: var(--color-white); font-size: var(--font-size-sm); font-weight: var(--font-weight-medium); }
+.submitButton:disabled { cursor: not-allowed; opacity: 0.65; }
+@media (max-width: 500px) { .submitButton { width: 100%; } }

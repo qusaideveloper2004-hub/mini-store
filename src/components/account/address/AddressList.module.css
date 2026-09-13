@@ -1,0 +1,160 @@
+.section {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.heading h1 {
+  margin: 0;
+
+  color: var(--color-primary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+
+.addressGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+.card {
+  display: grid;
+  gap: var(--space-5);
+
+  min-width: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-6);
+
+  background-color: var(--color-white);
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-card);
+}
+
+.defaultCard {
+  border-color: var(--color-primary);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.cardHeader h2 {
+  margin: 0;
+
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+
+.defaultBadge {
+  flex: 0 0 auto;
+
+  border-radius: var(--radius-sm);
+  padding: var(--space-1) var(--space-2);
+
+  background-color: var(--color-primary);
+  color: var(--color-white);
+
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.addressDetails {
+  display: grid;
+  gap: var(--space-2);
+
+  margin: 0;
+
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  font-style: normal;
+  line-height: var(--line-height-relaxed);
+}
+
+.addressDetails p {
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-4);
+}
+
+.defaultButton,
+.deleteButton {
+  border: 0;
+  padding: 0;
+
+  background-color: transparent;
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+
+  transition: color 160ms ease;
+}
+
+.defaultButton {
+  color: var(--color-text);
+}
+
+.defaultButton:hover {
+  color: var(--color-primary);
+}
+
+.deleteButton {
+  color: var(--color-primary);
+}
+
+.deleteButton:hover {
+  color: var(--color-primary-hover);
+}
+
+.emptyState {
+  display: grid;
+  justify-items: center;
+
+  min-height: 14rem;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-7);
+
+  text-align: center;
+}
+
+.emptyIcon {
+  width: 3rem;
+  height: 3rem;
+
+  color: var(--color-primary);
+}
+
+.emptyState p {
+  margin: var(--space-4) 0 0;
+
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+@media (max-width: 600px) {
+  .addressGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: var(--space-5);
+  }
+}

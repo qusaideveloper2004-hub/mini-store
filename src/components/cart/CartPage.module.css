@@ -1,0 +1,22 @@
+.page { min-height: 52vh; padding-block: var(--section-gap); }
+.breadcrumbs { display: flex; gap: var(--space-3); color: var(--color-text-muted); font-size: var(--font-size-sm); }
+.breadcrumbs a:hover { color: var(--color-primary); }
+.cartTable { margin-top: var(--space-9); }
+.tableHeader { display: grid; grid-template-columns: minmax(16rem, 2fr) minmax(5rem, 0.8fr) minmax(7rem, 0.9fr) minmax(5rem, 0.7fr); gap: var(--space-6); padding: var(--space-5) var(--space-6); border-radius: var(--radius-sm); box-shadow: var(--shadow-card); font-size: var(--font-size-sm); }
+.items { display: grid; gap: var(--space-5); margin-top: var(--space-6); }
+.actions { display: flex; justify-content: space-between; gap: var(--space-4); margin-top: var(--space-6); }
+.statusMessage { margin: var(--space-3) 0 0; color: var(--color-primary); font-size: var(--font-size-sm); }
+.secondaryButton, .primaryButton { display: inline-flex; align-items: center; justify-content: center; border-radius: var(--radius-sm); padding: var(--space-4) var(--space-7); font-size: var(--font-size-sm); font-weight: var(--font-weight-medium); }
+.secondaryButton { border: 1px solid var(--color-text-muted); background: var(--color-white); transition: border-color 160ms ease, color 160ms ease; }
+.secondaryButton:hover { border-color: var(--color-primary); color: var(--color-primary); }
+.primaryButton { border: 1px solid var(--color-primary); background: var(--color-primary); color: var(--color-white); transition: background-color 160ms ease; }
+.primaryButton:hover { background: var(--color-primary-hover); }
+.bottomSection { display: flex; align-items: start; justify-content: space-between; gap: var(--space-9); margin-top: var(--space-9); }
+.couponForm { display: flex; flex-wrap: wrap; gap: var(--space-4); }
+.couponForm input { width: min(18.75rem, 100%); min-height: 3.5rem; border: 1px solid var(--color-text); border-radius: var(--radius-sm); padding-inline: var(--space-5); background: var(--color-white); }
+.emptyState { display: grid; justify-items: center; max-width: 34rem; margin: var(--space-11) auto; text-align: center; }
+.emptyState h1 { margin: var(--space-5) 0 var(--space-2); font-size: var(--font-size-2xl); }
+.emptyState p { max-width: 30rem; margin: 0 0 var(--space-6); color: var(--color-text-muted); }
+.emptyIcon { width: 4rem; height: 4rem; color: var(--color-primary); }
+.srOnly { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+@media (max-width: 700px) { .page { padding-block: var(--space-9); } .cartTable { margin-top: var(--space-7); } .tableHeader { display: none; } .actions, .bottomSection { flex-direction: column; } .actions > *, .couponForm, .couponForm input, .couponForm button { width: 100%; } .bottomSection { gap: var(--space-7); } .emptyState { margin-block: var(--space-10); } }

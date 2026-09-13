@@ -1,0 +1,14 @@
+.page { min-height: 52vh; padding-block: var(--section-gap); }
+.breadcrumbs { display: flex; gap: var(--space-3); color: var(--color-text-muted); font-size: var(--font-size-sm); }
+.breadcrumbs a:hover { color: var(--color-primary); }
+.content { display: grid; grid-template-columns: minmax(0, 1fr) minmax(19rem, 0.72fr); align-items: start; gap: clamp(var(--space-7), 7vw, var(--space-11)); margin-top: var(--space-9); }
+.emptyState, .successState { display: grid; justify-items: center; max-width: 38rem; margin: var(--space-11) auto; text-align: center; }
+.emptyState h1, .successState h1 { margin: 0; font-size: var(--font-size-2xl); }
+.emptyState p, .successState p { margin: var(--space-3) 0 var(--space-6); color: var(--color-text-muted); }
+.successIcon { width: 4.5rem; height: 4.5rem; margin-bottom: var(--space-5); border-radius: var(--radius-full); padding: var(--space-4); background: var(--color-success); color: var(--color-black); }
+.orderNumber { color: var(--color-text) !important; }
+.successActions { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-4); }
+.primaryButton, .secondaryButton { display: inline-flex; justify-content: center; border-radius: var(--radius-sm); padding: var(--space-4) var(--space-7); font-size: var(--font-size-sm); font-weight: var(--font-weight-medium); }
+.primaryButton { background: var(--color-primary); color: var(--color-white); }
+.secondaryButton { border: 1px solid var(--color-text-muted); }
+@media (max-width: 800px) { .page { padding-block: var(--space-9); } .content { grid-template-columns: 1fr; margin-top: var(--space-7); } }

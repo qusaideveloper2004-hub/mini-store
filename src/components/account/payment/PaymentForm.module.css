@@ -1,0 +1,124 @@
+.form {
+  display: grid;
+  gap: var(--space-5);
+
+  margin-top: var(--space-9);
+  border-radius: var(--radius-sm);
+  padding: clamp(
+    var(--space-6),
+    4vw,
+    var(--space-9)
+  );
+
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-card);
+}
+
+.form h1 {
+  margin: 0 0 var(--space-2);
+
+  color: var(--color-primary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+
+.field {
+  display: grid;
+  gap: var(--space-2);
+
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.field input {
+  width: 100%;
+  min-height: 3.5rem;
+  border: 0;
+  border-radius: var(--radius-sm);
+  padding-inline: var(--space-4);
+
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
+
+.field input:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.field small {
+  color: var(--color-primary);
+  font-size: var(--font-size-xs);
+}
+
+.cardFields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-6);
+}
+
+.successMessage {
+  margin: 0;
+
+  color: #188649;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.saveButton {
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4) var(--space-7);
+
+  background-color: var(--color-primary);
+  color: var(--color-white);
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+
+  transition: background-color 160ms ease;
+}
+
+.saveButton:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.saveButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+@media (max-width: 600px) {
+  .form {
+    gap: var(--space-5);
+    margin-top: var(--space-7);
+    padding: var(--space-5);
+  }
+
+  .cardFields {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .saveButton {
+    width: 100%;
+  }
+
+  .successMessage {
+    text-align: center;
+  }
+}

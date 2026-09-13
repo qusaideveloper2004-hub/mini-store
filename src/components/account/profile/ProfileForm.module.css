@@ -1,0 +1,174 @@
+.form {
+  display: grid;
+  gap: var(--space-7);
+
+  border-radius: var(--radius-sm);
+  padding: clamp(
+    var(--space-6),
+    4vw,
+    var(--space-9)
+  );
+
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-card);
+}
+
+.form h1 {
+  margin: 0;
+
+  color: var(--color-primary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+
+.profileFields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-5) var(--space-6);
+}
+
+.field {
+  display: grid;
+  gap: var(--space-2);
+
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.field input {
+  width: 100%;
+  min-height: 3.5rem;
+  border: 0;
+  border-radius: var(--radius-sm);
+  padding-inline: var(--space-4);
+
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
+
+.field input:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.field small {
+  color: var(--color-primary);
+  font-size: var(--font-size-xs);
+}
+
+.passwordSection {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-7);
+}
+
+.passwordSection h2 {
+  margin: 0 0 var(--space-5);
+
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+
+.passwordFields {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-6);
+}
+
+.successMessage {
+  margin: 0;
+
+  color: #188649;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.cancelButton,
+.saveButton {
+  border-radius: var(--radius-sm);
+  padding: var(--space-4) var(--space-7);
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease;
+}
+
+.cancelButton {
+  border: 1px solid transparent;
+
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+.cancelButton:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.saveButton {
+  border: 1px solid var(--color-primary);
+
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.saveButton:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.saveButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+@media (max-width: 600px) {
+  .form {
+    gap: var(--space-6);
+    padding: var(--space-5);
+  }
+
+  .profileFields {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .passwordSection {
+    padding-top: var(--space-6);
+  }
+
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .buttonGroup {
+    width: 100%;
+  }
+
+  .cancelButton,
+  .saveButton {
+    flex: 1;
+  }
+
+  .successMessage {
+    text-align: center;
+  }
+}

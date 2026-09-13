@@ -1,0 +1,123 @@
+.page {
+  min-height: 52vh;
+  padding-top: var(--section-gap);
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.breadcrumbs a {
+  transition: color 160ms ease;
+}
+
+.breadcrumbs a:hover {
+  color: var(--color-primary);
+}
+
+.statsSection {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--product-grid-gap);
+
+  margin-top: var(--space-11);
+}
+
+.teamSection {
+  margin-top: var(--space-11);
+  margin-bottom: var(--space-11);
+}
+
+.teamHeading {
+  text-align: center;
+}
+
+.teamHeading p {
+  margin: 0 0 var(--space-3);
+
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.teamHeading h2 {
+  margin: 0;
+
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+}
+
+.teamHeading span {
+  display: block;
+
+  max-width: 34rem;
+  margin: var(--space-4) auto 0;
+
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--product-grid-gap);
+
+  margin-top: var(--space-9);
+}
+
+@media (max-width: 1024px) {
+  .statsSection {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-5);
+  }
+
+  .teamGrid {
+    gap: var(--space-5);
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding-top: var(--space-9);
+  }
+
+  .statsSection {
+    margin-top: var(--space-10);
+  }
+
+  .teamSection {
+    margin-top: var(--space-10);
+    margin-bottom: var(--space-10);
+  }
+
+  .teamGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    margin-top: var(--space-7);
+  }
+}
+
+@media (max-width: 560px) {
+  .breadcrumbs {
+    font-size: var(--font-size-xs);
+  }
+
+  .statsSection {
+    gap: var(--space-4);
+  }
+
+  .teamHeading h2 {
+    font-size: var(--font-size-xl);
+  }
+
+  .teamGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-7);
+  }
+}

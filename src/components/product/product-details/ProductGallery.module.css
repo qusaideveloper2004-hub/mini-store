@@ -1,0 +1,66 @@
+.gallery {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  gap: var(--space-4);
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.thumbnail,
+.mainImageArea {
+  position: relative;
+
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+}
+
+.thumbnail {
+  aspect-ratio: 1;
+  border: 2px solid transparent;
+  padding: 0;
+}
+
+.thumbnailActive {
+  border-color: var(--color-primary);
+}
+
+.thumbnailImage,
+.mainImage {
+  object-fit: contain;
+  padding: var(--space-3);
+}
+
+.mainImageArea {
+  min-height: 34rem;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .thumbnails {
+    order: 2;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .thumbnail {
+    flex: 0 0 5rem;
+  }
+
+  .mainImageArea {
+    min-height: 26rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .mainImageArea {
+    min-height: 20rem;
+  }
+}

@@ -1,0 +1,112 @@
+.page {
+  padding-block: var(--section-gap);
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+
+  overflow-x: auto;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
+}
+
+.breadcrumbLink {
+  transition: color 160ms ease;
+}
+
+.breadcrumbLink:hover {
+  color: var(--color-primary);
+}
+
+.currentBreadcrumb {
+  overflow: hidden;
+  color: var(--color-text);
+  text-overflow: ellipsis;
+}
+
+.productSection {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
+  align-items: start;
+  gap: clamp(var(--space-7), 5vw, var(--space-10));
+
+  margin-top: var(--space-9);
+}
+
+.relatedSection {
+  margin-top: var(--space-11);
+}
+
+.relatedHeading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-7);
+}
+
+.relatedMarker {
+  width: 1.25rem;
+  height: 2.5rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-primary);
+}
+
+.relatedHeading h2 {
+  margin: 0;
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--product-grid-gap);
+}
+
+@media (max-width: 1024px) {
+  .productSection {
+    grid-template-columns: minmax(0, 1fr) minmax(17rem, 0.85fr);
+    gap: var(--space-7);
+  }
+
+  .relatedGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding-block: var(--space-10);
+  }
+
+  .productSection {
+    grid-template-columns: 1fr;
+  }
+
+  .relatedSection {
+    margin-top: var(--space-10);
+  }
+
+  .relatedGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-7) var(--space-5);
+  }
+}
+
+@media (max-width: 560px) {
+  .page {
+    padding-block: var(--space-8);
+  }
+
+  .productSection {
+    margin-top: var(--space-7);
+  }
+
+  .relatedGrid {
+    gap: var(--space-6) var(--space-4);
+  }
+}

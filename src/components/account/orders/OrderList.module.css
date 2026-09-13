@@ -1,0 +1,76 @@
+.section {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.section h1 {
+  margin: 0;
+
+  color: var(--color-primary);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+
+.orderList {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.emptyState {
+  display: grid;
+  justify-items: center;
+
+  min-height: 16rem;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-7);
+
+  text-align: center;
+}
+
+.emptyIcon {
+  width: 3.5rem;
+  height: 3.5rem;
+
+  color: var(--color-primary);
+}
+
+.emptyState p {
+  margin: var(--space-4) 0 0;
+
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.shopButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: var(--space-6);
+  border-radius: var(--radius-sm);
+  padding: var(--space-4) var(--space-7);
+
+  background-color: var(--color-primary);
+  color: var(--color-white);
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+
+  transition: background-color 160ms ease;
+}
+
+.shopButton:hover {
+  background-color: var(--color-primary-hover);
+}
+
+@media (max-width: 600px) {
+  .emptyState {
+    min-height: 14rem;
+    padding: var(--space-5);
+  }
+
+  .shopButton {
+    width: 100%;
+  }
+}

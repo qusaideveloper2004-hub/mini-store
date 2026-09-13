@@ -1,0 +1,58 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.8fr);
+  align-items: center;
+
+  min-height: 38rem;
+}
+
+.visual {
+  position: relative;
+
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-height: 38rem;
+  min-height: 38rem;
+  overflow: hidden;
+
+  background-color: var(--color-surface);
+}
+
+.image {
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.formArea {
+  width: min(100%, 25rem);
+  margin-inline: auto;
+  padding: var(--space-8);
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .visual {
+    aspect-ratio: 16 / 9;
+    max-height: none;
+    min-height: 16rem;
+  }
+
+  .formArea {
+    padding: var(--space-8) var(--space-6);
+  }
+}
+
+@media (max-width: 560px) {
+  .visual {
+    aspect-ratio: 4 / 3;
+    min-height: 12rem;
+  }
+
+  .formArea {
+    padding: var(--space-7) var(--space-4);
+  }
+}

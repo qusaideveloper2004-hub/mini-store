@@ -1,0 +1,93 @@
+.card {
+  display: grid;
+  justify-items: center;
+
+  min-height: 14.375rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-7) var(--space-5);
+
+  text-align: center;
+
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-0.25rem);
+}
+
+.iconCircle {
+  display: grid;
+  place-items: center;
+
+  width: 5rem;
+  height: 5rem;
+  border: 0.625rem solid rgb(47 46 48 / 30%);
+  border-radius: var(--radius-full);
+
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.iconCircle svg {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.value {
+  margin-top: var(--space-5);
+
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.label {
+  margin: var(--space-2) 0 0;
+
+  font-size: var(--font-size-sm);
+}
+
+.featured {
+  border-color: var(--color-primary);
+
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.featured .iconCircle {
+  border-color: rgb(255 255 255 / 30%);
+
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+@media (max-width: 560px) {
+  .card {
+    min-height: 12.5rem;
+    padding: var(--space-6) var(--space-3);
+  }
+
+  .iconCircle {
+    width: 4rem;
+    height: 4rem;
+    border-width: 0.5rem;
+  }
+
+  .iconCircle svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .value {
+    font-size: var(--font-size-lg);
+  }
+
+  .label {
+    font-size: var(--font-size-xs);
+  }
+}

@@ -1,0 +1,13 @@
+.summary { border: 1px solid var(--color-text); border-radius: var(--radius-sm); padding: var(--space-6); }
+.summary h2 { margin: 0 0 var(--space-5); font-size: var(--font-size-lg); font-weight: var(--font-weight-medium); }
+.items { display: grid; gap: var(--space-4); margin: 0; padding: 0; list-style: none; }
+.items li { display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); font-size: var(--font-size-sm); }
+.product { display: flex; align-items: center; min-width: 0; gap: var(--space-3); }
+.product > span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.product small { color: var(--color-text-muted); }
+.imageSurface { display: grid; flex: 0 0 3.25rem; place-items: center; width: 3.25rem; height: 3.25rem; border-radius: var(--radius-sm); background: var(--color-surface); }
+.imageSurface img { width: 2.75rem; height: 2.75rem; object-fit: contain; }
+.totals { margin: var(--space-5) 0 0; }
+.totals div { display: flex; justify-content: space-between; gap: var(--space-4); border-top: 1px solid var(--color-border); padding-block: var(--space-3); font-size: var(--font-size-sm); }
+.totals dt, .totals dd { margin: 0; }
+.total { font-weight: var(--font-weight-medium); }

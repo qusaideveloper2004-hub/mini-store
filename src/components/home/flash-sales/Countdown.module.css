@@ -1,0 +1,52 @@
+.countdown {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-3);
+}
+
+.item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.label {
+  color: var(--color-text);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.value {
+  color: var(--color-text);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+}
+
+.separator {
+  position: absolute;
+  inset-inline-end: calc(var(--space-3) * -1);
+  bottom: 0;
+
+  color: var(--color-primary);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+}
+
+@media (max-width: 560px) {
+  .countdown {
+    gap: var(--space-2);
+  }
+
+  .value {
+    font-size: var(--font-size-lg);
+  }
+
+  .separator {
+    inset-inline-end: calc(var(--space-2) * -1);
+    font-size: var(--font-size-lg);
+  }
+}

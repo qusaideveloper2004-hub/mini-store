@@ -1,0 +1,540 @@
+{
+  "home": "الرئيسية",
+  "cart": {
+    "title": "السلة",
+    "home": "الرئيسية",
+    "product": "المنتج",
+    "price": "السعر",
+    "quantity": "الكمية",
+    "subtotal": "الإجمالي الفرعي",
+    "remove": "إزالة {title} من السلة",
+    "decreaseQuantity": "تقليل كمية {title}",
+    "increaseQuantity": "زيادة كمية {title}",
+    "returnToShop": "العودة إلى المتجر",
+    "updateCart": "تحديث السلة",
+    "couponPlaceholder": "كود الخصم",
+    "applyCoupon": "تطبيق الكوبون",
+    "cartUpdated": "تم تحديث السلة",
+    "couponUnavailable": "الكوبونات غير متاحة في النسخة التجريبية حاليًا.",
+    "cartTotal": "إجمالي السلة",
+    "shipping": "الشحن",
+    "free": "مجاني",
+    "total": "الإجمالي",
+    "proceedToCheckout": "المتابعة إلى إتمام الطلب",
+    "emptyTitle": "سلتك فارغة",
+    "emptyDescription": "أضف المنتجات التي تعجبك ثم عد هنا لإتمام طلبك.",
+    "continueShopping": "متابعة التسوق"
+  },
+  "wishlist": "المفضلة",
+  "addToCart": "أضف إلى السلة",
+  "storeName": "المتجر",
+  "language": "اللغة",
+
+  "checkout": {
+    "title": "إتمام الطلب",
+    "orderSummary": "ملخص الطلب",
+    "billingDetails": "بيانات الفاتورة",
+    "home": "الرئيسية",
+    "cart": "السلة",
+    "subtotal": "الإجمالي الفرعي",
+    "shipping": "الشحن",
+    "free": "مجاني",
+    "paymentMethod": "طريقة الدفع",
+    "bank": "تحويل بنكي",
+    "cash": "الدفع عند الاستلام",
+    "total": "الإجمالي",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "address": "العنوان",
+    "city": "المدينة",
+    "placeOrder": "تأكيد الطلب",
+    "emptyCart": "السلة فارغة",
+    "emptyCartDescription": "أضف بعض المنتجات قبل إتمام الطلب.",
+    "continueShopping": "متابعة التسوق",
+    "orderSuccess": "تم تأكيد الطلب بنجاح!",
+    "orderSuccessDescription": "شكرًا لك على الشراء.",
+    "orderNumber": "رقم الطلب",
+    "backToHome": "العودة للرئيسية",
+    "viewOrders": "عرض طلباتي"
+  },
+  "login": {
+    "title": "تسجيل الدخول",
+    "emailOrPhone": "البريد الإلكتروني أو رقم الهاتف",
+    "password": "كلمة المرور",
+    "submit": "تسجيل الدخول",
+    "forgotPassword": "هل نسيت كلمة المرور؟",
+    "noAccount": "ليس لديك حساب؟",
+    "createAccount": "إنشاء حساب",
+    "imageAlt": "امرأة تتسوق وتحمل أكياسًا",
+    "subtitle": "أدخل بياناتك بالأسفل",
+    "emailOrPhonePlaceholder": "البريد الإلكتروني أو رقم الهاتف",
+    "passwordPlaceholder": "كلمة المرور"
+  },
+  "signup": {
+    "title": "إنشاء حساب",
+    "name": "الاسم",
+    "emailOrPhone": "البريد الإلكتروني أو رقم الهاتف",
+    "password": "كلمة المرور",
+    "submit": "إنشاء حساب",
+    "alreadyHaveAccount": "لديك حساب بالفعل؟",
+    "login": "تسجيل الدخول",
+    "subtitle": "أدخل بياناتك بالأسفل",
+    "namePlaceholder": "الاسم",
+    "emailOrPhonePlaceholder": "البريد الإلكتروني أو رقم الهاتف",
+    "passwordPlaceholder": "كلمة المرور",
+    "signUpWithGoogle": "إنشاء حساب باستخدام جوجل",
+    "imageAlt": "امرأة تتسوق وتحمل أكياسًا"
+  },
+  "forgotPassword": {
+    "title": "نسيت كلمة المرور",
+    "emailOrPhone": "البريد الإلكتروني أو رقم الهاتف",
+    "submit": "إعادة تعيين كلمة المرور",
+    "successTitle": "تم إرسال الطلب",
+    "successDescription": "إذا كان هناك حساب مرتبط، سيتم إرسال تعليمات إعادة تعيين كلمة المرور.",
+    "subtitle": "أدخل بريدك الإلكتروني أو رقم هاتفك لإعادة تعيين كلمة المرور",
+    "emailOrPhonePlaceholder": "البريد الإلكتروني أو رقم الهاتف",
+    "backToLogin": "العودة إلى تسجيل الدخول",
+    "imageAlt": "رسم توضيحي لإعادة تعيين كلمة المرور"
+  },
+  "account": {
+    "home": "الرئيسية",
+    "welcome": "مرحبًا!",
+    "manageAccount": "إدارة حسابي",
+    "myProfile": "ملفي الشخصي",
+    "addressBook": "دفتر العناوين",
+    "paymentOptions": "خيارات الدفع الخاصة بي",
+    "myOrders": "طلباتي",
+    "orders": "طلباتي",
+    "returns": "مرتجعاتي",
+    "cancellations": "إلغاءات طلباتي",
+    "wishlist": "قائمة المفضلة",
+    "noOrders": "لا توجد طلبات حتى الآن",
+    "orderNumber": "الطلب",
+    "orderDate": "تاريخ الطلب",
+    "orderStatus": "الحالة",
+    "quantity": "الكمية",
+    "total": "الإجمالي",
+    "editProfile": "تعديل الملف الشخصي",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "email": "البريد الإلكتروني",
+    "address": "العنوان",
+    "addAddress": "إضافة عنوان جديد",
+    "phone": "رقم الهاتف",
+    "street": "عنوان الشارع",
+    "city": "المدينة",
+    "country": "الدولة",
+    "postalCode": "الرمز البريدي",
+    "saveAddress": "حفظ العنوان",
+    "savedAddresses": "العناوين المحفوظة",
+    "noAddresses": "لا توجد عناوين محفوظة حتى الآن",
+    "defaultAddress": "العنوان الافتراضي",
+    "makeDefault": "تعيين كافتراضي",
+    "delete": "حذف",
+    "addPayment": "إضافة طريقة دفع جديدة",
+    "cardholderName": "اسم حامل البطاقة",
+    "cardNumber": "رقم البطاقة",
+    "expiryMonth": "شهر الانتهاء",
+    "expiryYear": "سنة الانتهاء",
+    "cvv": "رمز الأمان",
+    "savePayment": "حفظ طريقة الدفع",
+    "savedPaymentMethods": "طرق الدفع المحفوظة",
+    "noPaymentMethods": "لا توجد طرق دفع محفوظة حتى الآن",
+    "defaultPayment": "طريقة الدفع الافتراضية",
+    "makeDefaultPayment": "تعيين كافتراضية",
+    "deletePayment": "حذف",
+    "requestReturn": "طلب إرجاع",
+    "returnProduct": "المنتج",
+    "selectProduct": "اختر منتجًا",
+    "returnQuantity": "الكمية",
+    "returnReason": "سبب الإرجاع",
+    "selectReason": "اختر السبب",
+    "wrongSize": "المقاس غير مناسب",
+    "wrongProduct": "منتج خاطئ",
+    "damagedProduct": "المنتج تالف",
+    "notNeeded": "لم أعد بحاجة إليه",
+    "submitReturn": "إرسال طلب الإرجاع",
+    "noReturns": "لا توجد مرتجعات حتى الآن",
+    "cancelOrder": "إلغاء الطلب",
+    "cancellationReason": "سبب الإلغاء",
+    "selectCancellationReason": "اختر سبب الإلغاء",
+    "changedMyMind": "غيرت رأيي",
+    "orderedByMistake": "طلبت بالخطأ",
+    "foundBetterPrice": "وجدت سعرًا أفضل",
+    "deliveryTooLate": "التوصيل يستغرق وقتًا طويلًا",
+    "submitCancellation": "إرسال طلب الإلغاء",
+    "cancellationNumber": "الإلغاء",
+    "cancellationStatus": "الحالة",
+    "noCancellations": "لا توجد طلبات ملغاة حتى الآن",
+    "account": "الحساب",
+    "login": "تسجيل الدخول",
+    "signUp": "إنشاء حساب",
+    "logout": "تسجيل الخروج",
+    "passwordChanges": "تغيير كلمة المرور",
+    "currentPassword": "كلمة المرور الحالية",
+    "newPassword": "كلمة المرور الجديدة",
+    "confirmNewPassword": "تأكيد كلمة المرور الجديدة",
+    "cancel": "إلغاء",
+    "saveChanges": "حفظ التغييرات",
+    "changesSaved": "تم حفظ التغييرات بنجاح",
+    "addressAdded": "تمت إضافة العنوان بنجاح",
+    "paymentAdded": "تمت إضافة طريقة الدفع بنجاح",
+    "continueShopping": "متابعة التسوق",
+    "orderStatuses": {
+      "pending": "قيد الانتظار",
+      "processing": "قيد المعالجة",
+      "shipped": "تم الشحن",
+      "delivered": "تم التسليم",
+      "cancelled": "ملغي",
+      "returnNumber": "طلب إرجاع",
+      "requestDate": "تاريخ الطلب",
+      "returnStatusRequested": "تم إرسال الطلب",
+      "returnStatusApproved": "تمت الموافقة",
+      "returnStatusRejected": "تم الرفض",
+      "returnStatusCompleted": "اكتمل الإرجاع",
+      "returnSubmitted": "تم إرسال طلب الإرجاع بنجاح",
+      "closeReturnForm": "إغلاق نموذج الإرجاع"
+    }
+  },
+  "profile": {
+    "title": "ملفي الشخصي",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "address": "العنوان",
+    "city": "المدينة",
+    "updateProfile": "تحديث الملف الشخصي"
+  },
+  "addressBook": {
+    "title": "دفتر العناوين",
+    "addNewAddress": "إضافة عنوان جديد",
+    "editAddress": "تعديل العنوان",
+    "deleteAddress": "حذف العنوان",
+    "noAddresses": "لا توجد عناوين محفوظة.",
+    "addressSaved": "تم حفظ العنوان بنجاح.",
+    "addressDeleted": "تم حذف العنوان بنجاح."
+  },
+  "paymentOptions": {
+    "title": "خيارات الدفع",
+    "addNewPaymentMethod": "إضافة طريقة دفع جديدة",
+    "editPaymentMethod": "تعديل طريقة الدفع",
+    "deletePaymentMethod": "حذف طريقة الدفع",
+    "noPaymentMethods": "لا توجد طرق دفع محفوظة.",
+    "paymentMethodSaved": "تم حفظ طريقة الدفع بنجاح.",
+    "paymentMethodDeleted": "تم حذف طريقة الدفع بنجاح."
+  },
+  "orders": {
+    "title": "طلباتي",
+    "orderNumber": "رقم الطلب",
+    "orderDate": "تاريخ الطلب",
+    "orderStatus": "حالة الطلب",
+    "viewDetails": "عرض التفاصيل",
+    "noOrders": "لا توجد طلبات."
+  },
+  "about": {
+    "title": "من نحن",
+    "subtitle": "نحن ملتزمون بتقديم أفضل تجربة تسوق لعملائنا.",
+    "storyTitle": "قصتنا",
+    "story": "تم إنشاء متجرنا لجعل التسوق عبر الإنترنت أكثر سهولة وراحة ومتعة. نحن نجمع المنتجات عالية الجودة في مكان واحد ونسهّل على عملائنا اكتشاف وشراء ما يحتاجونه.",
+    "missionTitle": "مهمتنا",
+    "mission": "مهمتنا هي تقديم منتجات عالية الجودة، وتجربة تسوق سهلة، وخدمة عملاء متميزة.",
+    "visionTitle": "رؤيتنا",
+    "vision": "رؤيتنا هي أن نصبح وجهة موثوقة للتسوق عبر الإنترنت من خلال وضع عملائنا في المقام الأول.",
+    "stats": {
+      "customers": "العملاء",
+      "products": "المنتجات",
+      "orders": "الطلبات",
+      "support": "دعم العملاء"
+    }
+  },
+  "contact": {
+    "title": "تواصل معنا",
+    "subtitle": "يسعدنا سماع رأيك. تواصل معنا في أي وقت.",
+
+    "breadcrumbLabel": "مسار التنقل في صفحة التواصل",
+    "home": "الرئيسية",
+
+    "callUsTitle": "اتصل بنا",
+    "callUsDescription": "نحن متاحون على مدار الساعة طوال أيام الأسبوع.",
+    "phone": "01032831805",
+
+    "writeUsTitle": "راسلنا",
+    "writeUsDescription": "املأ النموذج وسنتواصل معك خلال 24 ساعة.",
+    "contactEmail": "qusaideveloper2004@gmail.com",
+
+    "name": "الاسم",
+    "emailLabel": "البريد الإلكتروني",
+    "message": "رسالتك",
+
+    "namePlaceholder": "اكتب اسمك",
+    "emailPlaceholder": "اكتب بريدك الإلكتروني",
+    "messagePlaceholder": "اكتب رسالتك هنا",
+
+    "sendMessage": "إرسال الرسالة",
+    "successMessage": "تم إرسال رسالتك بنجاح."
+  },
+  "notFound": {
+    "title": "404 - الصفحة غير موجودة",
+    "description": "الصفحة التي تبحث عنها غير موجودة أو ربما تم نقلها.",
+    "backToHome": "العودة إلى الصفحة الرئيسية"
+  },
+  "error": {
+    "title": "حدث خطأ ما",
+    "description": "حدث خطأ غير متوقع. من فضلك حاول مرة أخرى.",
+    "tryAgain": "حاول مرة أخرى"
+  },
+  "loading": {
+    "message": "جارٍ التحميل..."
+  },
+  "header": {
+    "announcement": "تخفيضات الصيف على جميع ملابس السباحة مع شحن سريع مجاني - خصم 50%!",
+    "shopNow": "تسوّق الآن",
+    "home": "الرئيسية",
+    "contact": "تواصل معنا",
+    "about": "من نحن",
+    "signUp": "إنشاء حساب",
+    "searchPlaceholder": "ماذا تبحث عنه؟",
+    "wishlist": "المفضلة",
+    "cart": "السلة",
+    "login": "تسجيل الدخول",
+    "account": "حسابي",
+    "brand": "ميني ستور"
+  },
+  "footer": {
+    "subscribe": "اشترك",
+    "subscriptionDescription": "احصل على آخر المنتجات والعروض.",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "support": "الدعم",
+    "account": "الحساب",
+    "quickLinks": "روابط سريعة",
+    "myAccount": "حسابي",
+    "loginRegister": "تسجيل الدخول / إنشاء حساب",
+    "cart": "السلة",
+    "wishlist": "المفضلة",
+    "about": "من نحن",
+    "contact": "تواصل معنا",
+    "copyright": "© {year} ميني ستور. جميع الحقوق محفوظة.",
+    "shop": "المتجر",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsOfUse": "شروط الاستخدام",
+    "faq": "الأسئلة الشائعة",
+    "downloadApp": "حمّل التطبيق",
+    "downloadDescription": "امسح رمز QR للتواصل معنا عبر تيليجرام.",
+    "telegramQrAlt": "رمز QR الخاص بتيليجرام",
+    "googlePlay": "جوجل بلاي",
+    "appStore": "آب ستور"
+  },
+  "productCard": {
+    "discount": "خصم {discount}%",
+    "addToWishlist": "أضف {title} إلى المفضلة",
+    "addToCart": "أضف إلى السلة",
+    "ratingLabel": "التقييم: {rating} من 5",
+    "reviews": "({count, plural, =0 {لا توجد مراجعات} =1 {مراجعة واحدة} =2 {مراجعتان} few {# مراجعات} many {# مراجعة} other {# مراجعة}})"
+  },
+  "homePage": {
+    "hero": {
+      "goToSlide": "الانتقال إلى الشريحة رقم {number}",
+      "iphone": {
+        "eyebrow": "آيفون 14",
+        "title": "خصم حتى 10%",
+        "imageAlt": "عرض ترويجي لهاتف آيفون 14"
+      },
+      "playstation": {
+        "eyebrow": "بلايستيشن 5",
+        "title": "استمتع بمستوى جديد من الألعاب",
+        "imageAlt": "عرض ترويجي لجهاز بلايستيشن 5"
+      },
+      "womenCollection": {
+        "eyebrow": "مجموعة النساء",
+        "title": "اكتشفي إطلالتك المفضلة القادمة",
+        "imageAlt": "عرض ترويجي لأزياء نسائية"
+      },
+      "speakers": {
+        "eyebrow": "سماعات لاسلكية",
+        "title": "صوت يتحرك معك أينما ذهبت",
+        "imageAlt": "عرض ترويجي لسماعات لاسلكية"
+      }
+    },
+    "sidebar": {
+      "womenFashion": "أزياء نسائية",
+      "womenDresses": "فساتين",
+      "womenBags": "حقائب",
+      "womenShoes": "أحذية",
+      "menFashion": "أزياء رجالية",
+      "menShirts": "قمصسان",
+      "menShoes": "أحذية",
+      "menWatches": "ساعات",
+      "electronics": "إلكترونيات",
+      "homeLifestyle": "المنزل ونمط الحياة",
+      "medicine": "الصحة والدواء",
+      "sportsOutdoor": "الرياضة والأنشطة الخارجية",
+      "babyToys": "الأطفال والألعاب",
+      "groceriesPets": "البقالة والحيوانات الأليفة",
+      "healthBeauty": "الصحة والجمال",
+      "navigationLabel": "فئات المنتجات",
+      "openSubmenu": "فتح القائمة الفرعية لفئة {category}"
+    },
+    "flashSales": {
+      "days": "أيام",
+      "hours": "ساعات",
+      "minutes": "دقائق",
+      "seconds": "ثوانٍ",
+      "eyebrow": "عروض اليوم",
+      "title": "عروض سريعة",
+      "previousProducts": "عرض المنتجات السابقة",
+      "nextProducts": "عرض المنتجات التالية",
+      "viewAllProducts": "عرض جميع المنتجات"
+    },
+    "browseCategories": {
+      "eyebrow": "التصنيفات",
+      "title": "تصفح حسب التصنيف",
+      "previousCategories": "عرض التصنيفات السابقة",
+      "nextCategories": "عرض التصنيفات التالية",
+      "items": {
+        "phones": "الهواتف",
+        "computers": "أجهزة الكمبيوتر",
+        "smartWatches": "الساعات الذكية",
+        "cameras": "الكاميرات",
+        "headphones": "سماعات الرأس",
+        "gaming": "الألعاب"
+      }
+    },
+    "bestSelling": {
+      "eyebrow": "هذا الشهر",
+      "title": "المنتجات الأكثر تميزًا",
+      "viewAll": "عرض الكل"
+    },
+    "musicExperience": {
+      "eyebrow": "التصنيفات",
+      "title": "استمتع بتجربة موسيقية أفضل",
+      "buyNow": "اشترِ الآن",
+      "imageAlt": "عرض ترويجي لسماعة لاسلكية",
+      "hours": "ساعات",
+      "days": "أيام",
+      "minutes": "دقائق",
+      "seconds": "ثوانٍ"
+    },
+    "exploreProducts": {
+      "eyebrow": "منتجاتنا",
+      "title": "استكشف منتجاتنا",
+      "previousProducts": "عرض المنتجات السابقة",
+      "nextProducts": "عرض المنتجات التالية",
+      "viewAllProducts": "عرض جميع المنتجات"
+    },
+    "newArrival": {
+      "eyebrow": "مميز",
+      "title": "وصل حديثًا",
+      "shopNow": "تسوق الآن",
+      "items": {
+        "playstation": {
+          "title": "بلايستيشن 5",
+          "description": "الإصدار الأسود والأبيض من بلايستيشن 5 متاح الآن.",
+          "imageAlt": "جهاز بلايستيشن 5"
+        },
+        "womenCollection": {
+          "title": "مجموعة النساء",
+          "description": "تشكيلة مختارة تمنحك إطلالة مختلفة.",
+          "imageAlt": "مجموعة أزياء نسائية"
+        },
+        "speakers": {
+          "title": "سماعات",
+          "description": "سماعات لاسلكية مميزة",
+          "imageAlt": "سماعات لاسلكية"
+        },
+        "perfume": {
+          "title": "عطر",
+          "description": "عطر غوتشي إنتنس عود",
+          "imageAlt": "زجاجة عطر"
+        }
+      }
+    },
+    "serviceFeatures": {
+      "items": {
+        "delivery": {
+          "title": "توصيل سريع ومجاني",
+          "description": "توصيل مجاني لجميع الطلبات فوق 140 دولارًا"
+        },
+        "support": {
+          "title": "خدمة عملاء على مدار الساعة",
+          "description": "دعم عملاء ودود متاح 24 ساعة يوميًا"
+        },
+        "guarantee": {
+          "title": "ضمان استرداد الأموال",
+          "description": "نسترد أموالك خلال 30 يومًا"
+        }
+      }
+    }
+  },
+  "shopPage": {
+    "title": "المتجر",
+    "description": "تصفح جميع المنتجات المتاحة."
+  },
+  "productDetails": {
+    "home": "الرئيسية",
+    "reviews": "({count, plural, =0 {لا توجد مراجعات} =1 {مراجعة واحدة} =2 {مراجعتان} few {# مراجعات} many {# مراجعة} other {# مراجعة}})",
+    "inStock": "متوفر في المخزون",
+    "outOfStock": "غير متوفر في المخزون",
+    "quantity": "الكمية",
+    "decreaseQuantity": "تقليل الكمية",
+    "increaseQuantity": "زيادة الكمية",
+    "addToCart": "أضف إلى السلة",
+    "buyNow": "اشترِ الآن",
+    "freeDelivery": "توصيل مجاني",
+    "freeDeliveryDescription": "تظهر خيارات التوصيل عند إتمام الطلب.",
+    "returnDelivery": "إرجاع المنتج",
+    "returnDeliveryDescription": "تظهر خيارات الإرجاع عند إتمام الطلب.",
+    "addToWishlist": "أضف {title} إلى المفضلة",
+    "removeFromWishlist": "أزل {title} من المفضلة",
+    "viewImage": "عرض صورة المنتج رقم {number}",
+    "relatedItems": "منتجات مشابهة"
+  },
+  "wishlistPage": {
+    "breadcrumbLabel": "مسار التنقل في المفضلة",
+    "home": "الرئيسية",
+    "title": "المفضلة",
+    "savedItems": "{count, plural, =0 {لا توجد منتجات محفوظة} =1 {منتج محفوظ واحد} =2 {منتجان محفوظان} few {# منتجات محفوظة} many {# منتجًا محفوظًا} other {# منتج محفوظ}}",
+    "productListLabel": "المنتجات المحفوظة",
+    "emptyTitle": "قائمة المفضلة فارغة",
+    "emptyDescription": "احفظ المنتجات التي تعجبك هنا حتى تجدها بسهولة لاحقًا.",
+    "continueShopping": "متابعة التسوق"
+  },
+  "aboutPage": {
+    "breadcrumbLabel": "مسار التنقل في صفحة من نحن",
+    "home": "الرئيسية",
+    "title": "من نحن",
+
+    "heroTitle": "قصتنا",
+    "heroParagraphOne": "تم إنشاء ميني ستور لجعل التسوق الإلكتروني سهلًا وممتعًا ومتاحًا للجميع. نجمع منتجات مختارة بعناية في مكان واحد.",
+    "heroParagraphTwo": "هدفنا هو تقديم تجربة تسوق سلسة من خلال معلومات واضحة للمنتجات وتنقل بسيط ودعم مفيد للعملاء.",
+    "heroImageAlt": "أشخاص يتسوقون معًا",
+
+    "statsLabel": "إحصائيات المتجر",
+    "stats": {
+      "customers": "عميل نشط",
+      "sales": "عملية بيع شهرية",
+      "products": "منتج متاح",
+      "support": "دعم العملاء"
+    },
+
+    "teamEyebrow": "فريقنا",
+    "teamTitle": "تعرف على فريقنا",
+    "teamDescription": "الأشخاص الذين يعملون خلف ميني ستور وتجربة التسوق الخاصة به.",
+
+    "team": {
+      "qusai": {
+        "name": "قصي عصام",
+        "role": "مطور واجهات أمامية"
+      },
+      "emmaWatson": {
+        "name": "إيما واتسون",
+        "role": "المديرة التنفيذية"
+      },
+      "willSmith": {
+        "name": "ويل سميث",
+        "role": "مصمم منتجات"
+      }
+    }
+  }
+}

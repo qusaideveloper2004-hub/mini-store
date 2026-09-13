@@ -1,0 +1,121 @@
+.section {
+  padding-top: var(--section-gap);
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 31.25rem;
+  overflow: hidden;
+
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: var(--space-10);
+}
+
+.eyebrow {
+  margin: 0 0 var(--space-5);
+
+  color: var(--color-success);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.title {
+  max-width: 26rem;
+  margin: 0 0 var(--space-7);
+
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  letter-spacing: 0.03em;
+}
+
+.buyNowButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 3.5rem;
+  margin-top: var(--space-8);
+  border-radius: var(--radius-sm);
+  padding-inline: 3rem;
+
+  background-color: var(--color-success);
+  color: var(--color-black);
+
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+
+  transition:
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.buyNowButton:hover {
+  background-color: var(--color-white);
+  transform: translateY(-0.125rem);
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 31.25rem;
+  padding: var(--space-7);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-height: 27rem;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    padding: var(--space-8);
+  }
+
+  .imageWrapper {
+    min-height: 20rem;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .section {
+    padding-top: var(--space-10);
+  }
+
+  .content {
+    padding: var(--space-6);
+  }
+
+  .title {
+    font-size: var(--font-size-xl);
+  }
+
+  .buyNowButton {
+    width: 100%;
+    margin-top: var(--space-6);
+  }
+
+  .imageWrapper {
+    min-height: 16rem;
+    padding-inline: var(--space-6);
+  }
+}

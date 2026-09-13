@@ -1,0 +1,42 @@
+.controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.controlButton {
+  display: grid;
+  place-items: center;
+
+  width: 2.875rem;
+  height: 2.875rem;
+  border: 0;
+  border-radius: var(--radius-full);
+
+  padding: 0;
+  background-color: var(--color-surface);
+  color: var(--color-text);
+
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
+}
+
+.controlButton:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: scale(1.05);
+}
+
+.controlButton svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+@media (max-width: 560px) {
+  .controlButton {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
