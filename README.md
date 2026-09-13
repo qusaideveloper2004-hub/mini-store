@@ -20,11 +20,11 @@ Add your screenshots to `docs/screenshots/` using these exact filenames:
 
 ### Home Page
 
-![Mini Store home page](docs/screenshots/home-desktop.png)
+![Mini Store home page](docs/screenshots/home-desktop.png.png)
 
 ### Shop Page
 
-![Mini Store shop page](docs/screenshots/shop-desktop.png)
+![Mini Store shop page](docs/screenshots/shop-desktop.png.png)
 
 ### Product Details
 
@@ -32,7 +32,7 @@ Add your screenshots to `docs/screenshots/` using these exact filenames:
 
 ### Account Page
 
-![Mini Store account page](docs/screenshots/account-desktop.png)
+![Mini Store account page](docs/screenshots/account-desktop.png.png)
 
 > You can replace the filenames above, but the image paths in this section must match the files you add.
 
