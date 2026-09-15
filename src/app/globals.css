@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-/* =========================================
-   1) Design Tokens
-   هذه هي القيم المشتركة في الموقع كله
-   ========================================= */
 
 :root {
   /* ---------- Colors ---------- */
@@ -24,16 +20,10 @@
   --color-rating: #ffad33;
   --color-success: #00ff66;
 
-  /* ---------- Typography ---------- */
-
-  /*
-    نستخدم fallback مؤقتًا.
-    لاحقًا سنضيف الخط الحقيقي من layout.tsx
-    باستخدام next/font.
-  */
+  
   --font-family-sans: Arial, Helvetica, sans-serif;
 
-  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-xs: 0.95rem; /* 12px */
   --font-size-sm: 0.875rem; /* 14px */
   --font-size-base: 1rem; /* 16px */
   --font-size-lg: 1.25rem; /* 20px */
@@ -84,10 +74,6 @@
   --shadow-dropdown: 0 8px 24px rgb(0 0 0 / 12%);
 }
 
-/* =========================================
-   2) Global Reset
-   قواعد تجعل المتصفح يبدأ بشكل موحد
-   ========================================= */
 
 *,
 *::before,
@@ -133,10 +119,6 @@ img {
   max-width: 100%;
 }
 
-/* =========================================
-   3) Shared Layout Utility
-   نستخدمه داخل أي صفحة لتوسيط المحتوى
-   ========================================= */
 
 .container {
   width: min(
@@ -154,14 +136,12 @@ img {
   padding-block: var(--space-8);
 }
 
-/* مساحة مريحة للشاشات الأكبر */
 @media (min-width: 768px) {
   :root {
     --container-padding: 2rem;
   }
 }
 
-/* ضبط بسيط للنص العربي */
 [dir="rtl"] {
   text-align: right;
 }

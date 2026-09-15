@@ -1,5 +1,6 @@
 .section {
   padding-top: var(--section-gap);
+  
 }
 
 .products {
@@ -53,6 +54,8 @@
   background-color: var(--color-primary-hover);
   transform: translateY(-0.125rem);
 }
+
+
 
 @media (max-width: 1024px) {
   .products {

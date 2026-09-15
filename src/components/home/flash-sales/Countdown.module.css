@@ -1,52 +1,55 @@
 .countdown {
   display: flex;
   align-items: flex-end;
-  gap: var(--space-3);
+  gap: 2.375rem; /* مسافة أوسع بين كل وحدة والتانية */
+  margin-inline-start: 3.4375rem; /* مسافة 87px عن كلمة Flash Sales */
 }
 
 .item {
   position: relative;
-
   display: flex;
   flex-direction: column;
-  gap: var(--space-1);
+  gap: 0.25rem;
 }
 
 .label {
   color: var(--color-text);
-  font-size: var(--font-size-xs);
-  font-weight: var(--font-weight-medium);
+  font-size: 0.75rem; /* 12px */
+  font-weight: 500;
+  line-height: 1;
 }
 
 .value {
   color: var(--color-text);
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-bold);
+  font-size: 2rem; /* 32px أضخم ومطابق للفيجما */
+  font-weight: 700;
+  letter-spacing: 0.04em;
   line-height: 1;
 }
 
 .separator {
   position: absolute;
-  inset-inline-end: calc(var(--space-3) * -1);
-  bottom: 0;
+  /* ضبط موقع نقطتين العداد لتكون في المنتصف وبشكل رأسي متناسق */
+  inset-inline-end: -1.25rem;
+  bottom: 0.25rem;
 
-  color: var(--color-primary);
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-bold);
+  color: #e07575; /* لون أحمر خفيف ناعم نفس الفيجما */
+  font-size: 1.25rem;
+  font-weight: 700;
   line-height: 1;
 }
 
 @media (max-width: 560px) {
   .countdown {
-    gap: var(--space-2);
+    margin-inline-start: 0;
+    gap: 1.5rem;
   }
 
   .value {
-    font-size: var(--font-size-lg);
+    font-size: 1.5rem;
   }
 
   .separator {
-    inset-inline-end: calc(var(--space-2) * -1);
-    font-size: var(--font-size-lg);
+    inset-inline-end: -0.875rem;
   }
 }
