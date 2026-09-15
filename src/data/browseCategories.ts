@@ -4,7 +4,13 @@ export type CategoryIcon =
   | "watch"
   | "camera"
   | "headphones"
-  | "gamepad";
+  | "gamepad"
+  | "perfume"
+  | "glasses"
+  | "sparkles"
+  | "bag"
+  | "shoe"
+  | "shirt";
 
 export type BrowseCategory = {
   id: string;
@@ -42,5 +48,36 @@ export const browseCategories: BrowseCategory[] = [
     id: "gaming",
     slug: "gaming",
     icon: "gamepad",
+  },
+    {
+    id: "perfumes",
+    slug: "fragrances",
+    icon: "perfume",
+  },
+    {
+    id: "sunglasses",
+    slug: "sunglasses",
+    icon: "glasses",
+  },
+
+  {
+    id: "skinCare",
+    slug: "skin-care",
+    icon: "sparkles",
+  },
+  {
+    id: "bags",
+    slug: "womens-bags",
+    icon: "bag",
+  },
+  {
+    id: "shoes",
+    slug: "mens-shoes",
+    icon: "shoe",
+  },
+  {
+    id: "clothing",
+    slug: "mens-shirts",
+    icon: "shirt",
   },
 ];

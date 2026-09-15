@@ -50,6 +50,8 @@ export default function ExploreProductsSection({
     });
   }
 
+
+
   return (
     <section className={styles.section}>
       <div className="container">

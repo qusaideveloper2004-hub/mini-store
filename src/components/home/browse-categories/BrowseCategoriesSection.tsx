@@ -15,18 +15,35 @@ export default function BrowseCategoriesSection() {
 
   const categoriesRef = useRef<HTMLDivElement>(null);
 
-  function scrollCategories(direction: 1 | -1) {
-    const categoriesElement = categoriesRef.current;
+  // function scrollCategories(direction: 1 | -1) {
+  //   const categoriesElement = categoriesRef.current;
 
-    if (!categoriesElement) {
-      return;
-    }
+  //   if (!categoriesElement) {
+  //     return;
+  //   }
 
-    categoriesElement.scrollBy({
-      left: categoriesElement.clientWidth * 0.85 * direction,
-      behavior: "smooth",
-    });
-  }
+  //   categoriesElement.scrollBy({
+  //     left: categoriesElement.clientWidth * 0.85 * direction,
+  //     behavior: "smooth",
+  //   });
+  // }
+  
+
+// نفس النام دي داله عشان اخلي حركه الاسهم اسموزي 
+    function scrollCategories(direction: 1 | -1) {
+  const productsElement = categoriesRef.current;
+  if (!productsElement) return;
+
+  const isRtl = document.documentElement.dir === "rtl";
+  const multiplier = isRtl ? -direction : direction;
+
+  productsElement.scrollBy({
+    left: productsElement.clientWidth * 0.9 * multiplier,
+    behavior: "smooth",
+  });
+}
+
+
 
   return (
     <section className={styles.section}>

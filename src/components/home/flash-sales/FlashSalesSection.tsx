@@ -23,18 +23,32 @@ export default function FlashSalesSection({
 
   const productsRef = useRef<HTMLDivElement>(null);
 
+  // function scrollProducts(direction: 1 | -1) {
+  //   const productsElement = productsRef.current;
+
+  //   if (!productsElement) {
+  //     return;
+  //   }
+
+  //   productsElement.scrollBy({
+  //     left: productsElement.clientWidth * 0.9 * direction,
+  //     behavior: "smooth",
+  //   });
+  // }
+
+// انا هنا عدلت حركه الاسهم عشان تكون اسموزي شويه 
   function scrollProducts(direction: 1 | -1) {
-    const productsElement = productsRef.current;
+  const productsElement = productsRef.current;
+  if (!productsElement) return;
 
-    if (!productsElement) {
-      return;
-    }
+  const isRtl = document.documentElement.dir === "rtl";
+  const multiplier = isRtl ? -direction : direction;
 
-    productsElement.scrollBy({
-      left: productsElement.clientWidth * 0.9 * direction,
-      behavior: "smooth",
-    });
-  }
+  productsElement.scrollBy({
+    left: productsElement.clientWidth * 0.9 * multiplier,
+    behavior: "smooth",
+  });
+}
 
   return (
     <section className={styles.section}>

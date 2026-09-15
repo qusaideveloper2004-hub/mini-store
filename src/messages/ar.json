@@ -403,7 +403,13 @@
         "smartWatches": "الساعات الذكية",
         "cameras": "الكاميرات",
         "headphones": "سماعات الرأس",
-        "gaming": "الألعاب"
+        "gaming": "الألعاب",
+        "perfumes": "العطور",
+        "sunglasses": "النظارات الشمسية",
+        "skinCare": "العناية بالبشرة",
+        "bags": "الحقائب",
+        "shoes": "الأحذية",
+        "clothing": "الملابس"
       }
     },
     "bestSelling": {

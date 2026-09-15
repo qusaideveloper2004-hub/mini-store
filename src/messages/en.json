@@ -407,7 +407,13 @@
         "smartWatches": "SmartWatch",
         "cameras": "Camera",
         "headphones": "HeadPhones",
-        "gaming": "Gaming"
+        "gaming": "Gaming",
+        "perfumes": "Perfumes",
+        "sunglasses": "Sunglasses",
+        "skinCare": "Skin Care",
+        "bags": "Bags",
+        "shoes": "Shoes",
+        "clothing": "Clothing"
       }
     },
     "bestSelling": {
